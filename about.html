@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#ECE9E0;color:#15140F;font-family:system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:#E5642A;color:#ECE9E0}
+a{color:inherit}
+</style>
+</helmet>
+
+<header style="position:sticky;top:0;z-index:90;background:rgba(236,233,224,.92);backdrop-filter:blur(10px);border-bottom:2px solid #15140F">
+  <div style="max-width:1280px;margin:0 auto;padding:0 32px;height:66px;display:flex;align-items:center;gap:20px">
+    <a href="index.html" data-logo style="display:flex;align-items:center;gap:11px;text-decoration:none;flex:none">
+      <span style="position:relative;width:32px;height:32px;background:#15140F;flex:none;display:block">
+        <span data-bar style="position:absolute;left:6px;bottom:7px;width:5px;height:7px;background:#E5642A"></span>
+        <span data-bar style="position:absolute;left:13.5px;bottom:7px;width:5px;height:12px;background:#E5642A"></span>
+        <span data-bar style="position:absolute;left:21px;bottom:7px;width:5px;height:18px;background:#E5642A"></span>
+      </span>
+      <span style="display:flex;flex-direction:column"><span style="font:800 15px/1 'Archivo',sans-serif;letter-spacing:-.01em;color:#15140F">C&#8209;LEVEL</span><span style="font:600 8px/1 'JetBrains Mono',monospace;letter-spacing:.34em;color:#6b6759;margin-top:4px">ADVISING</span></span>
+    </a>
+    <nav style="margin-left:auto;display:flex;gap:20px;align-items:center">
+      <a href="about.html" style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;text-decoration:none;letter-spacing:.04em;text-transform:uppercase;border-bottom:2px solid #E5642A;padding-bottom:3px">About</a>
+      <a href="approach.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Approach</a>
+      <a href="services.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Services</a>
+      <a href="problems.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Problems</a>
+      <a href="ai.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#E5642A;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">AI</a>
+      <a href="case-studies.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Work</a>
+      <a href="insights.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Insights</a>
+      <a href="contact.html" style="font:700 12px/1 'Archivo',sans-serif;color:#ECE9E0;background:#15140F;padding:12px 18px;text-decoration:none;letter-spacing:.02em;transition:background .15s" style-hover="background:#E5642A">BOOK A CALL</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section style="position:relative;overflow:hidden;background:#ECE9E0">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(21,20,15,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(21,20,15,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none"></div>
+  <div style="position:relative;max-width:1100px;margin:0 auto;padding:30px 32px 0">
+    <div style="font:600 12px/1 'JetBrains Mono',monospace;color:#6b6759;letter-spacing:.06em"><a href="index.html" style="color:#6b6759;text-decoration:none">HOME</a> / ABOUT</div>
+  </div>
+  <div style="position:relative;max-width:1100px;margin:0 auto;padding:46px 32px 64px">
+    <span class="rv" style="opacity:0;transform:translateY(18px);display:inline-block;font:700 11px/1 'JetBrains Mono',monospace;letter-spacing:.05em;color:#15140F;background:#E5642A;padding:7px 11px;margin-bottom:24px">ABOUT</span>
+    <h1 class="rv" style="opacity:0;transform:translateY(30px);font:800 clamp(36px,5.6vw,78px)/.96 'Archivo',sans-serif;letter-spacing:-.035em;margin:0 0 24px;max-width:18ch">Seeing what leadership can't — then fixing it.</h1>
+    <p class="rv" style="opacity:0;transform:translateY(20px);font:400 clamp(16px,1.5vw,21px)/1.55 system-ui;color:#3a382f;max-width:60ch;margin:0">An operator, not just an advisor. I step inside growing businesses, find what's holding them back, and stay to fix it.</p>
+  </div>
+</section>
+
+<!-- BODY -->
+<section style="background:#ECE9E0;padding:0 0 84px">
+  <div style="max-width:1100px;margin:0 auto;padding:0 32px">
+    <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:start;border-top:2px solid #15140F;padding-top:40px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <p class="rv" style="opacity:0;transform:translateY(18px);font:400 17px/1.65 system-ui;color:#2b2822;margin:0">I serve as a fractional COO/President for several growth-stage companies and coach the CEOs who lead them. My core value is seeing what leadership can't: surfacing blind spots in how the business is actually running, pinpointing the gaps and core challenges, and then filling and fixing them.</p>
+        <p class="rv" style="opacity:0;transform:translateY(18px);font:400 17px/1.65 system-ui;color:#2b2822;margin:0">I roll up my sleeves to dig deep into how a business truly operates — closing gaps in visibility, data integrity, and execution while strengthening leadership and culture. I drive accountability across teams, evolve how a company works, and scale leadership so the business can grow without losing control of how it runs.</p>
+        <p class="rv" style="opacity:0;transform:translateY(18px);font:400 17px/1.65 system-ui;color:#2b2822;margin:0">With experience building and selling a large IT services firm, I launched C-Level Advising in 2021 to help other CEOs navigate the challenges of growth. I specialize in streamlining operations, improving profitability, building exit-ready businesses, and applying AI as a practical lever for performance — not a buzzword.</p>
+        <p class="rv" style="opacity:0;transform:translateY(18px);font:400 17px/1.65 system-ui;color:#2b2822;margin:0">A central part of my work today is helping companies launch AI the right way — enabling users, protecting the business, ensuring data integrity, and overseeing safe usage. I've also become an expert in <b style="font-weight:700">AI virtual employees</b>: agents that run 24/7 at a fraction of the cost of traditional headcount.</p>
+      </div>
+      <div class="rv" style="opacity:0;transform:translateY(22px);border:2px solid #15140F;background:#15140F;color:#ECE9E0">
+        <div style="padding:18px 22px;border-bottom:2px solid #E5642A;font:700 12px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#E5642A;text-transform:uppercase">At a glance</div>
+        <div style="display:flex;flex-direction:column">
+          <div style="padding:15px 22px;border-bottom:1px solid rgba(236,233,224,.16)"><div style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Roles</div><div style="font:600 14px/1.3 system-ui">Fractional COO / President · CEO coach</div></div>
+          <div style="padding:15px 22px;border-bottom:1px solid rgba(236,233,224,.16)"><div style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Firm</div><div style="font:600 14px/1.3 system-ui">Founder, C-Level Advising (2021)</div></div>
+          <div style="padding:15px 22px;border-bottom:1px solid rgba(236,233,224,.16)"><div style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Background</div><div style="font:600 14px/1.3 system-ui">Built &amp; sold a large IT services firm</div></div>
+          <div style="padding:15px 22px;border-bottom:1px solid rgba(236,233,224,.16)"><div style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Focus</div><div style="font:600 14px/1.3 system-ui">Growth-stage service &amp; tech firms</div></div>
+          <div style="padding:15px 22px;border-bottom:1px solid rgba(236,233,224,.16)"><div style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Edge</div><div style="font:600 14px/1.3 system-ui">AI launch &amp; AI virtual employees</div></div>
+          <div style="padding:15px 22px"><div style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Outcome</div><div style="font:600 14px/1.3 system-ui;color:#E5642A">Leaner · profitable · exit-ready</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPLES -->
+<section style="background:#15140F;color:#ECE9E0;padding:84px 0;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(236,233,224,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(236,233,224,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none"></div>
+  <div style="position:relative;max-width:1100px;margin:0 auto;padding:0 32px">
+    <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid #ECE9E0;padding-bottom:18px">
+      <h2 style="font:800 clamp(26px,3.4vw,42px)/1 'Archivo';letter-spacing:-.03em;margin:0">An operator's principles</h2>
+      <span style="font:700 12px/1 'JetBrains Mono';color:#E5642A;letter-spacing:.05em">WHAT I BELIEVE</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr)">
+      <div class="rv" style="opacity:0;transform:translateY(24px);border-right:1px solid rgba(236,233,224,.18);padding:34px 26px 0 0"><div style="font:800 30px/1 'Archivo';color:#E5642A;margin-bottom:16px">01</div><h3 style="font:700 20px/1.15 'Archivo';margin:0 0 10px">Diagnose, then stay</h3><p style="font:400 14.5px/1.6 system-ui;color:#a7a299;margin:0">Anyone can write a report. Real value comes from owning the fix and seeing it through.</p></div>
+      <div class="rv" style="opacity:0;transform:translateY(24px);transition-delay:.08s;border-right:1px solid rgba(236,233,224,.18);padding:34px 26px 0"><div style="font:800 30px/1 'Archivo';color:#E5642A;margin-bottom:16px">02</div><h3 style="font:700 20px/1.15 'Archivo';margin:0 0 10px">The truth, kindly</h3><p style="font:400 14.5px/1.6 system-ui;color:#a7a299;margin:0">A CEO needs a partner who'll tell them what's actually happening — not what they want to hear.</p></div>
+      <div class="rv" style="opacity:0;transform:translateY(24px);transition-delay:.16s;padding:34px 0 0 26px"><div style="font:800 30px/1 'Archivo';color:#E5642A;margin-bottom:16px">03</div><h3 style="font:700 20px/1.15 'Archivo';margin:0 0 10px">AI as a lever, not a buzzword</h3><p style="font:400 14.5px/1.6 system-ui;color:#a7a299;margin:0">Technology only matters if it makes the business run better. I deploy it where it pays off.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:#E5642A;color:#15140F;padding:80px 0;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(21,20,15,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(21,20,15,.06) 1px,transparent 1px);background-size:64px 64px;pointer-events:none"></div>
+  <div style="position:relative;max-width:1100px;margin:0 auto;padding:0 32px">
+    <div class="rv" style="opacity:0;transform:translateY(22px);display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between">
+      <h2 style="font:800 clamp(28px,4vw,54px)/1 'Archivo';letter-spacing:-.03em;margin:0;max-width:20ch">Let's talk about what's really going on.</h2>
+      <a href="contact.html" style="font:700 14px/1 'Archivo';color:#ECE9E0;background:#15140F;padding:18px 30px;text-decoration:none;transition:transform .12s;white-space:nowrap" style-hover="transform:translateY(-2px)">BOOK A CALL</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#15140F;color:#a7a299;padding:48px 0 30px">
+  <div style="max-width:1100px;margin:0 auto;padding:0 32px">
+    <div style="display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-start;border-bottom:1px solid rgba(236,233,224,.16);padding-bottom:28px">
+      <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none"><span style="position:relative;width:28px;height:28px;background:#E5642A;flex:none;display:block"><span style="position:absolute;left:5px;bottom:6px;width:4px;height:6px;background:#15140F"></span><span style="position:absolute;left:12px;bottom:6px;width:4px;height:11px;background:#15140F"></span><span style="position:absolute;left:19px;bottom:6px;width:4px;height:16px;background:#15140F"></span></span><span style="font:800 16px/1 'Archivo';color:#ECE9E0;letter-spacing:-.01em">C&#8209;LEVEL ADVISING</span></a>
+      <div style="display:flex;gap:44px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:9px"><span style="font:600 10px/1 'JetBrains Mono';color:#5a564c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px">Explore</span><a href="about.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">About</a><a href="services.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Services</a><a href="approach.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Approach</a><a href="case-studies.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Work</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><span style="font:600 10px/1 'JetBrains Mono';color:#5a564c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px">Contact</span><a href="mailto:scottgordon2002@gmail.com" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">scottgordon2002@gmail.com</a><a href="https://www.linkedin.com/in/scott-gordon-7668b12/" target="_blank" rel="noopener" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">LinkedIn</a></div>
+      </div>
+    </div>
+    <div style="font:500 11px/1 'JetBrains Mono';color:#5a564c;margin-top:22px">© <span data-year>2026</span> C&#8209;LEVEL ADVISING · SCOTT GORDON</div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){
+    const els=Array.prototype.slice.call(document.querySelectorAll('.rv'));
+    const shown=new WeakSet();
+    const tween=(el,delay)=>{ const m=(el.style.transform||'').match(/translateY\(([-\d.]+)px\)/); const from=m?parseFloat(m[1]):0; const dur=700; let t0=null;
+      const step=(ts)=>{ if(t0===null)t0=ts; const e2=ts-t0; if(e2<delay){requestAnimationFrame(step);return;} const p=Math.min(1,(e2-delay)/dur); const e=1-Math.pow(1-p,3); el.style.opacity=String(e); el.style.transform='translateY('+(from*(1-e))+'px)'; if(p<1)requestAnimationFrame(step); else{el.style.opacity='1';el.style.transform='none';} }; requestAnimationFrame(step); };
+    const show=(el)=>{ if(shown.has(el))return; shown.add(el); const d=(parseFloat(getComputedStyle(el).transitionDelay)||0)*1000; el.style.setProperty('transition','none','important'); tween(el,d); };
+    const reveal=()=>{ const vh=window.innerHeight; els.forEach(el=>{ if(shown.has(el))return; const r=el.getBoundingClientRect(); if(r.top<vh*0.92&&r.bottom>0)show(el); }); };
+    this._reveal=reveal; requestAnimationFrame(()=>requestAnimationFrame(reveal));
+    window.addEventListener('scroll',reveal,{passive:true}); window.addEventListener('resize',reveal); document.addEventListener('scroll',reveal,{passive:true,capture:true});
+    let n=0; this._iv=setInterval(()=>{reveal(); if(++n>60)clearInterval(this._iv);},130); this._safety=setTimeout(()=>{var vh=window.innerHeight;els.forEach(e=>{var r=e.getBoundingClientRect();if(r.top<vh&&r.bottom>0){e.style.setProperty('transition','none','important');e.style.opacity='1';e.style.transform='none';}});},1400);
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden)reveal();});
+    document.querySelectorAll('[data-year]').forEach(y=>y.textContent=new Date().getFullYear());
+    const logo=document.querySelector('[data-logo]');
+    if(logo){ const bars=Array.prototype.slice.call(logo.querySelectorAll('[data-bar]')); const base=[7,12,18]; let hov=false,lr=null;
+      const anim=(now)=>{ bars.forEach((b,i)=>{ b.style.height=(base[i]+(hov?4+5*Math.abs(Math.sin(now/180+i*1.3)):0))+'px'; }); if(hov||bars.some((b,i)=>Math.abs(parseFloat(b.style.height)-base[i])>0.4))lr=requestAnimationFrame(anim); else {bars.forEach((b,i)=>b.style.height=base[i]+'px');lr=null;} };
+      logo.addEventListener('mouseenter',()=>{hov=true;if(!lr)lr=requestAnimationFrame(anim);}); logo.addEventListener('mouseleave',()=>{hov=false;}); this._lr=()=>lr&&cancelAnimationFrame(lr);
+    }
+  }
+  componentWillUnmount(){ if(this._iv)clearInterval(this._iv); if(this._safety)clearTimeout(this._safety); if(this._lr)this._lr();
+    if(this._reveal){window.removeEventListener('scroll',this._reveal);window.removeEventListener('resize',this._reveal);document.removeEventListener('scroll',this._reveal,true);} }
+}
+</script>
+</body>
+</html>

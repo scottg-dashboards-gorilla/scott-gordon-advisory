@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#ECE9E0;color:#15140F;font-family:system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:#E5642A;color:#ECE9E0}
+a{color:inherit}
+</style>
+</helmet>
+
+<!-- ================= NAV ================= -->
+<header style="position:sticky;top:0;z-index:90;background:rgba(236,233,224,.9);backdrop-filter:blur(10px);border-bottom:2px solid #15140F">
+  <div style="max-width:1280px;margin:0 auto;padding:0 32px;height:66px;display:flex;align-items:center;gap:22px">
+    <a href="index.html" data-logo style="display:flex;align-items:center;gap:11px;text-decoration:none">
+      <span style="position:relative;width:32px;height:32px;background:#15140F;flex:none;display:block">
+        <span data-bar style="position:absolute;left:6px;bottom:7px;width:5px;height:7px;background:#E5642A;transition:height .2s"></span>
+        <span data-bar style="position:absolute;left:13.5px;bottom:7px;width:5px;height:12px;background:#E5642A;transition:height .2s"></span>
+        <span data-bar style="position:absolute;left:21px;bottom:7px;width:5px;height:18px;background:#E5642A;transition:height .2s"></span>
+      </span>
+      <span style="display:flex;flex-direction:column">
+        <span style="font:800 15px/1 'Archivo',sans-serif;letter-spacing:-.01em;color:#15140F">C&#8209;LEVEL</span>
+        <span style="font:600 8px/1 'JetBrains Mono',monospace;letter-spacing:.34em;color:#6b6759;margin-top:4px">ADVISING</span>
+      </span>
+    </a>
+    <span style="width:1px;height:18px;background:#15140F;opacity:.25"></span>
+    <span style="font:600 10px/1.3 'JetBrains Mono',monospace;color:#6b6759;letter-spacing:.08em;text-transform:uppercase">Scott Gordon<br>Fractional COO · AI</span>
+    <nav style="margin-left:auto;display:flex;gap:20px;align-items:center">
+      <a href="about.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">About</a>
+      <a href="approach.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Approach</a>
+      <a href="services.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Services</a>
+      <a href="problems.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Problems</a>
+      <a href="ai.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#E5642A;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">AI</a>
+      <a href="case-studies.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Work</a>
+      <a href="insights.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Insights</a>
+      <a href="contact.html" data-magnet style="font:700 12px/1 'Archivo',sans-serif;color:#ECE9E0;background:#15140F;padding:12px 18px;text-decoration:none;letter-spacing:.02em;transition:background .15s" style-hover="background:#E5642A">BOOK A CALL</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section style="position:relative;overflow:hidden;background:#ECE9E0">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(21,20,15,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(21,20,15,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none"></div>
+  <div style="position:relative;max-width:1280px;margin:0 auto;padding:74px 32px 0">
+    <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;align-items:center;gap:14px;margin-bottom:34px;flex-wrap:wrap">
+      <span style="font:700 11px/1 'JetBrains Mono',monospace;letter-spacing:.05em;color:#E5642A;background:rgba(229,100,42,.12);padding:7px 11px">001 / OPERATOR</span>
+      <span style="display:flex;align-items:center;gap:8px"><span data-pulse style="width:8px;height:8px;border-radius:50%;background:#1f8a3b"></span><span style="font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6b6759">Available · 2 fractional seats open</span></span>
+    </div>
+    <h1 style="font:800 clamp(48px,8.4vw,124px)/.9 'Archivo',sans-serif;letter-spacing:-.045em;margin:0 0 32px">
+      <span class="rv" style="opacity:0;transform:translateY(34px);display:block">Find the</span>
+      <span class="rv" style="opacity:0;transform:translateY(34px);display:block"><span style="color:#E5642A">blind spots.</span></span>
+      <span class="rv" style="opacity:0;transform:translateY(34px);display:block">Fix the gaps.</span>
+    </h1>
+    <div style="display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:end;border-top:2px solid #15140F;padding:28px 0 56px">
+      <p class="rv" style="opacity:0;transform:translateY(20px);font:400 clamp(16px,1.55vw,20px)/1.55 system-ui;color:#3a382f;max-width:56ch;margin:0">I'm a hands-on fractional COO/President and CEO coach for growth-stage companies — surfacing what leadership can't see, fixing the core challenges, and launching AI the right way, including <b style="color:#15140F;font-weight:700">AI virtual employees that run 24/7</b> at a fraction of the cost of headcount.</p>
+      <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;gap:12px;justify-content:flex-end;flex-wrap:wrap">
+        <a href="#contact" data-magnet style="font:700 14px/1 'Archivo',sans-serif;color:#ECE9E0;background:#15140F;padding:17px 26px;text-decoration:none;transition:background .15s" style-hover="background:#E5642A">BOOK A CALL</a>
+        <a href="#demo" style="font:700 14px/1 'Archivo',sans-serif;color:#15140F;border:2px solid #15140F;padding:15px 24px;text-decoration:none;transition:background .15s,color .15s" style-hover="background:#15140F;color:#ECE9E0">SEE THE AI DEMO</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section style="background:#ECE9E0;padding:0 0 8px">
+  <div style="max-width:1280px;margin:0 auto;padding:0 32px">
+    <div class="rv" style="opacity:0;transform:translateY(24px);display:grid;grid-template-columns:repeat(4,1fr);border:2px solid #15140F">
+      <div style="padding:32px 26px;border-right:2px solid #15140F"><div data-count="30" data-suffix="+" style="font:800 clamp(40px,4.4vw,60px)/1 'Archivo',sans-serif;letter-spacing:-.03em">0</div><div style="font:600 11px/1.4 'JetBrains Mono',monospace;color:#6b6759;margin-top:10px;letter-spacing:.04em;text-transform:uppercase">Years operating &amp; scaling</div></div>
+      <div style="padding:32px 26px;border-right:2px solid #15140F"><div data-count="20" data-suffix="+" style="font:800 clamp(40px,4.4vw,60px)/1 'Archivo',sans-serif;letter-spacing:-.03em">0</div><div style="font:600 11px/1.4 'JetBrains Mono',monospace;color:#6b6759;margin-top:10px;letter-spacing:.04em;text-transform:uppercase">Companies advised since 2021</div></div>
+      <div style="padding:32px 26px;border-right:2px solid #15140F;background:#E5642A"><div style="font:800 clamp(40px,4.4vw,60px)/1 'Archivo',sans-serif;letter-spacing:-.03em;color:#15140F">24/7</div><div style="font:600 11px/1.4 'JetBrains Mono',monospace;color:#3a1c0c;margin-top:10px;letter-spacing:.04em;text-transform:uppercase">AI virtual employees</div></div>
+      <div style="padding:32px 26px"><div style="font:800 clamp(40px,4.4vw,60px)/1 'Archivo',sans-serif;letter-spacing:-.03em">2021</div><div style="font:600 11px/1.4 'JetBrains Mono',monospace;color:#6b6759;margin-top:10px;letter-spacing:.04em;text-transform:uppercase">CLevelAdvising founded</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" style="background:#ECE9E0;padding:96px 0">
+  <div style="max-width:1280px;margin:0 auto;padding:0 32px">
+    <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid #15140F;padding-bottom:18px;margin-bottom:0">
+      <h2 style="font:800 clamp(28px,3.6vw,46px)/1 'Archivo',sans-serif;letter-spacing:-.03em;margin:0">What I do</h2>
+      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">002 / CAPABILITIES</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr)">
+      <div class="svc rv" style="opacity:0;transform:translateY(24px);border-bottom:2px solid #15140F;border-right:2px solid #15140F;padding:34px 32px 34px 0;cursor:default;transition:background .18s,padding .18s">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:12px"><span style="font:700 13px/1 'JetBrains Mono',monospace;color:#E5642A">01</span><h3 style="font:700 23px/1.1 'Archivo',sans-serif;margin:0">Fractional COO / President</h3></div>
+        <p style="font:400 14.5px/1.6 system-ui;color:#5a574c;margin:0;max-width:46ch">Operational leadership for growth-stage companies — owning execution, accountability, and the systems that keep a scaling business under control.</p>
+      </div>
+      <div class="svc rv" style="opacity:0;transform:translateY(24px);transition-delay:.06s;border-bottom:2px solid #15140F;padding:34px 0 34px 32px;cursor:default;transition:background .18s,padding .18s">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:12px"><span style="font:700 13px/1 'JetBrains Mono',monospace;color:#E5642A">02</span><h3 style="font:700 23px/1.1 'Archivo',sans-serif;margin:0">CEO coaching &amp; advisory</h3></div>
+        <p style="font:400 14.5px/1.6 system-ui;color:#5a574c;margin:0;max-width:46ch">A trusted partner to the CEO — helping you see your blind spots, navigate the challenges of growth, evolve culture, and scale your leadership.</p>
+      </div>
+      <div class="svc rv" style="opacity:0;transform:translateY(24px);transition-delay:.12s;border-right:2px solid #15140F;padding:34px 32px 0 0;cursor:default;transition:background .18s,padding .18s">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:12px"><span style="font:700 13px/1 'JetBrains Mono',monospace;color:#E5642A">03</span><h3 style="font:700 23px/1.1 'Archivo',sans-serif;margin:0">Safe AI launch &amp; oversight</h3></div>
+        <p style="font:400 14.5px/1.6 system-ui;color:#5a574c;margin:0;max-width:46ch;padding-bottom:34px">Adopt AI the right way — enabling users, protecting the business, ensuring data integrity, and overseeing safe, responsible usage end to end.</p>
+      </div>
+      <div class="svc rv" style="opacity:0;transform:translateY(24px);transition-delay:.18s;padding:34px 0 0 32px;cursor:default;transition:background .18s,padding .18s">
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:12px"><span style="font:700 13px/1 'JetBrains Mono',monospace;color:#E5642A">04</span><h3 style="font:700 23px/1.1 'Archivo',sans-serif;margin:0">Dashboards &amp; AI virtual employees</h3></div>
+        <p style="font:400 14.5px/1.6 system-ui;color:#5a574c;margin:0;max-width:46ch;padding-bottom:34px">Turning scattered, manual reporting into real-time visibility — and deploying AI virtual employees that run 24/7 at a fraction of the cost of traditional headcount.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPROACH ================= -->
+<section id="approach" style="background:#15140F;color:#ECE9E0;padding:96px 0;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(236,233,224,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(236,233,224,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none"></div>
+  <div style="position:relative;max-width:1280px;margin:0 auto;padding:0 32px">
+    <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid #ECE9E0;padding-bottom:18px">
+      <h2 style="font:800 clamp(28px,3.6vw,46px)/1 'Archivo',sans-serif;letter-spacing:-.03em;margin:0">How I work</h2>
+      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">003 / METHOD</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0">
+      <div class="rv" style="opacity:0;transform:translateY(26px);border-right:1px solid rgba(236,233,224,.18);padding:34px 26px 0 0"><div style="font:800 30px/1 'Archivo';color:#E5642A;margin-bottom:18px">01</div><h3 style="font:700 19px/1.15 'Archivo';margin:0 0 10px">See clearly</h3><p style="font:400 14px/1.6 system-ui;color:#a7a299;margin:0">Dig into how the business actually runs and surface the blind spots leadership can't see from inside.</p></div>
+      <div class="rv" style="opacity:0;transform:translateY(26px);transition-delay:.07s;border-right:1px solid rgba(236,233,224,.18);padding:34px 26px 0"><div style="font:800 30px/1 'Archivo';color:#E5642A;margin-bottom:18px">02</div><h3 style="font:700 19px/1.15 'Archivo';margin:0 0 10px">Find the gaps</h3><p style="font:400 14px/1.6 system-ui;color:#a7a299;margin:0">Pinpoint the core challenges in visibility, data integrity, and execution that hold growth back.</p></div>
+      <div class="rv" style="opacity:0;transform:translateY(26px);transition-delay:.14s;border-right:1px solid rgba(236,233,224,.18);padding:34px 26px 0"><div style="font:800 30px/1 'Archivo';color:#E5642A;margin-bottom:18px">03</div><h3 style="font:700 19px/1.15 'Archivo';margin:0 0 10px">Fix &amp; build</h3><p style="font:400 14px/1.6 system-ui;color:#a7a299;margin:0">Fill the gaps, drive accountability, and put the right people, process, and tools in place.</p></div>
+      <div class="rv" style="opacity:0;transform:translateY(26px);transition-delay:.21s;padding:34px 0 0 26px"><div style="font:800 30px/1 'Archivo';color:#E5642A;margin-bottom:18px">04</div><h3 style="font:700 19px/1.15 'Archivo';margin:0 0 10px">Scale safely</h3><p style="font:400 14px/1.6 system-ui;color:#a7a299;margin:0">Launch dashboards, tools, and AI so the business runs leaner and decides faster.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AI DEMO ================= -->
+<section id="demo" style="background:#15140F;color:#ECE9E0;padding:0 0 100px;position:relative">
+  <div style="max-width:1280px;margin:0 auto;padding:0 32px">
+    <div class="rv" style="opacity:0;transform:translateY(20px);border-top:2px solid #E5642A;padding-top:40px">
+      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">004 / THE DIFFERENTIATOR</span>
+      <h2 style="font:800 clamp(30px,4.6vw,60px)/.98 'Archivo',sans-serif;letter-spacing:-.035em;margin:18px 0 14px;max-width:20ch">AI virtual employees, launched the right way.</h2>
+      <p style="font:400 16px/1.6 system-ui;color:#a7a299;max-width:64ch;margin:0 0 38px">Pick a task below and watch a virtual employee work it in real time. They run around the clock at a fraction of the cost of headcount — and I deploy and oversee them so they stay safe and accountable.</p>
+    </div>
+
+    <div class="rv" style="opacity:0;transform:translateY(28px);border:2px solid #ECE9E0;background:#0f0e0a;display:grid;grid-template-columns:300px 1fr">
+      <!-- left: task chips -->
+      <div style="border-right:2px solid #ECE9E0;padding:22px">
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:20px">
+          <span data-pulse style="width:9px;height:9px;border-radius:50%;background:#39c46a;box-shadow:0 0 10px #39c46a"></span>
+          <span style="font:700 11px/1 'JetBrains Mono',monospace;letter-spacing:.12em;color:#ECE9E0">ONLINE · 24/7</span>
+          <span data-clock style="margin-left:auto;font:500 11px/1 'JetBrains Mono',monospace;color:#7d786c">--:--:--</span>
+        </div>
+        <div style="font:600 10px/1 'JetBrains Mono',monospace;letter-spacing:.14em;color:#7d786c;text-transform:uppercase;margin-bottom:12px">Assign a task</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <button data-task="invoices" style="text-align:left;font:600 13px/1.3 system-ui;color:#ECE9E0;background:transparent;border:1px solid rgba(236,233,224,.25);padding:13px 14px;cursor:pointer;transition:background .15s,border-color .15s" style-hover="border-color:#E5642A;background:rgba(229,100,42,.08)">Reconcile open invoices</button>
+          <button data-task="followups" style="text-align:left;font:600 13px/1.3 system-ui;color:#ECE9E0;background:transparent;border:1px solid rgba(236,233,224,.25);padding:13px 14px;cursor:pointer;transition:background .15s,border-color .15s" style-hover="border-color:#E5642A;background:rgba(229,100,42,.08)">Draft AR follow-ups</button>
+          <button data-task="risk" style="text-align:left;font:600 13px/1.3 system-ui;color:#ECE9E0;background:transparent;border:1px solid rgba(236,233,224,.25);padding:13px 14px;cursor:pointer;transition:background .15s,border-color .15s" style-hover="border-color:#E5642A;background:rgba(229,100,42,.08)">Flag at-risk accounts</button>
+          <button data-task="brief" style="text-align:left;font:600 13px/1.3 system-ui;color:#ECE9E0;background:transparent;border:1px solid rgba(236,233,224,.25);padding:13px 14px;cursor:pointer;transition:background .15s,border-color .15s" style-hover="border-color:#E5642A;background:rgba(229,100,42,.08)">Compile daily ops brief</button>
+        </div>
+        <div style="font:400 10.5px/1.5 'JetBrains Mono',monospace;color:#5a564c;margin-top:20px">Illustrative. Real deployments run continuously against your own systems.</div>
+      </div>
+      <!-- right: console -->
+      <div style="display:flex;flex-direction:column;min-height:420px">
+        <div style="display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid rgba(236,233,224,.16);font:600 11px/1 'JetBrains Mono',monospace;color:#7d786c">
+          <span style="width:9px;height:9px;border-radius:50%;background:#E5642A"></span>
+          <span data-title style="letter-spacing:.06em">ai-employee — operations</span>
+        </div>
+        <div data-log style="flex:1;padding:18px;overflow-y:auto;font:500 12.5px/1.7 'JetBrains Mono',monospace;color:#c9c4b6;max-height:340px">
+          <div data-idle style="color:#6f6a5e">› Idle. Select a task on the left to dispatch the AI virtual employee.</div>
+        </div>
+        <div data-output style="display:none;border-top:2px solid #E5642A;background:rgba(229,100,42,.06);padding:18px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SELECTED WORK + BEFORE/AFTER ================= -->
+<section id="work" style="background:#ECE9E0;padding:96px 0">
+  <div style="max-width:1280px;margin:0 auto;padding:0 32px">
+    <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid #15140F;padding-bottom:18px;margin-bottom:30px">
+      <h2 style="font:800 clamp(28px,3.6vw,46px)/1 'Archivo',sans-serif;letter-spacing:-.03em;margin:0">Selected work</h2>
+      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">005 / EVIDENCE</span>
+    </div>
+    <p class="rv" style="opacity:0;transform:translateY(18px);font:400 15px/1.6 system-ui;color:#5a574c;max-width:60ch;margin:0 0 28px">The recurring before/after of an engagement: scattered, stale, manual reporting becomes real-time visibility leadership can act on. <b>Drag the divider.</b></p>
+
+    <!-- BEFORE/AFTER SLIDER -->
+    <div class="rv" data-ba style="opacity:0;transform:translateY(28px);position:relative;border:2px solid #15140F;height:400px;overflow:hidden;user-select:none;cursor:ew-resize;background:#15140F">
+      <!-- AFTER (base) -->
+      <div style="position:absolute;inset:0;background:#15140F;color:#ECE9E0;padding:26px 30px">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:22px"><span data-pulse style="width:9px;height:9px;border-radius:50%;background:#39c46a;box-shadow:0 0 10px #39c46a"></span><span style="font:700 12px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#ECE9E0">LIVE · REAL-TIME VISIBILITY</span></div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+          <div style="border:1px solid rgba(236,233,224,.2);padding:18px"><div style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">Gross margin</div><div style="font:800 34px/1 'Archivo';color:#E5642A">38.4%</div><div style="font:500 11px/1 'JetBrains Mono';color:#39c46a;margin-top:8px">▲ 6.1 pts</div></div>
+          <div style="border:1px solid rgba(236,233,224,.2);padding:18px"><div style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">Cash days</div><div style="font:800 34px/1 'Archivo';color:#ECE9E0">41</div><div style="font:500 11px/1 'JetBrains Mono';color:#39c46a;margin-top:8px">▼ 19 days</div></div>
+          <div style="border:1px solid rgba(236,233,224,.2);padding:18px"><div style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">Util. rate</div><div style="font:800 34px/1 'Archivo';color:#ECE9E0">82%</div><div style="font:500 11px/1 'JetBrains Mono';color:#39c46a;margin-top:8px">▲ on plan</div></div>
+        </div>
+        <div style="margin-top:18px;border:1px solid rgba(236,233,224,.2);padding:16px 18px;display:flex;align-items:flex-end;gap:7px;height:120px">
+          <div style="flex:1;background:rgba(236,233,224,.18);height:42%"></div><div style="flex:1;background:rgba(236,233,224,.18);height:55%"></div><div style="flex:1;background:rgba(236,233,224,.18);height:48%"></div><div style="flex:1;background:rgba(236,233,224,.18);height:67%"></div><div style="flex:1;background:rgba(236,233,224,.18);height:74%"></div><div style="flex:1;background:#E5642A;height:88%"></div><div style="flex:1;background:#E5642A;height:96%"></div>
+        </div>
+      </div>
+      <!-- BEFORE (clipped overlay) -->
+      <div data-before style="position:absolute;inset:0;background:#d9d4c6;color:#3a382f;padding:26px 30px;clip-path:inset(0 50% 0 0)">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:22px"><span style="width:9px;height:9px;border-radius:50%;background:#b23b2a"></span><span style="font:700 12px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#7a4036">STALE · MANUAL REPORTING</span></div>
+        <div style="border:1px solid #b9b3a3;background:#cfc9ba">
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);font:500 11px/1 'JetBrains Mono';color:#6b6759">
+            <div style="padding:9px 10px;border-right:1px solid #b9b3a3;border-bottom:1px solid #b9b3a3">acct</div><div style="padding:9px 10px;border-right:1px solid #b9b3a3;border-bottom:1px solid #b9b3a3">last mo</div><div style="padding:9px 10px;border-right:1px solid #b9b3a3;border-bottom:1px solid #b9b3a3">??</div><div style="padding:9px 10px;border-bottom:1px solid #b9b3a3">status</div>
+            <div style="padding:9px 10px;border-right:1px solid #b9b3a3;border-bottom:1px solid #b9b3a3">#4471</div><div style="padding:9px 10px;border-right:1px solid #b9b3a3;border-bottom:1px solid #b9b3a3">12,400</div><div style="padding:9px 10px;border-right:1px solid #b9b3a3;border-bottom:1px solid #b9b3a3;color:#b23b2a">#REF!</div><div style="padding:9px 10px;border-bottom:1px solid #b9b3a3;color:#b23b2a">stale</div>
+            <div style="padding:9px 10px;border-right:1px solid #b9b3a3;border-bottom:1px solid #b9b3a3">#4472</div><div style="padding:9px 10px;border-right:1px solid #b9b3a3;border-bottom:1px solid #b9b3a3">—</div><div style="padding:9px 10px;border-right:1px solid #b9b3a3;border-bottom:1px solid #b9b3a3">?</div><div style="padding:9px 10px;border-bottom:1px solid #b9b3a3;color:#b23b2a">missing</div>
+            <div style="padding:9px 10px;border-right:1px solid #b9b3a3">#4473</div><div style="padding:9px 10px;border-right:1px solid #b9b3a3">9,1??</div><div style="padding:9px 10px;border-right:1px solid #b9b3a3;color:#b23b2a">#REF!</div><div style="padding:9px 10px;color:#b23b2a">stale</div>
+          </div>
+        </div>
+        <div style="margin-top:16px;display:flex;flex-direction:column;gap:8px">
+          <div style="font:500 12px/1.4 'JetBrains Mono';color:#7a4036">⚠ 3 versions of this file in email</div>
+          <div style="font:500 12px/1.4 'JetBrains Mono';color:#7a4036">⚠ numbers 6 weeks behind</div>
+          <div style="font:500 12px/1.4 'JetBrains Mono';color:#7a4036">⚠ no one agrees which is right</div>
+        </div>
+      </div>
+      <!-- handle -->
+      <div data-handle style="position:absolute;top:0;bottom:0;left:50%;width:2px;background:#E5642A;transform:translateX(-1px);pointer-events:none">
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:#E5642A;display:flex;align-items:center;justify-content:center;font:700 14px/1 'Archivo';color:#15140F">‹›</div>
+      </div>
+      <div data-balabel style="position:absolute;left:16px;bottom:14px;font:700 11px/1 'JetBrains Mono';letter-spacing:.1em;color:#7a4036;background:rgba(217,212,198,.85);padding:6px 9px">◄ BEFORE</div>
+      <div style="position:absolute;right:16px;bottom:14px;font:700 11px/1 'JetBrains Mono';letter-spacing:.1em;color:#ECE9E0;background:rgba(21,20,15,.6);padding:6px 9px">AFTER ►</div>
+    </div>
+
+    <!-- case teasers -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);margin-top:28px;border:2px solid #15140F">
+      <a href="case-regional-msp-turnaround.html" class="rv case" style="opacity:0;transform:translateY(24px);text-decoration:none;color:#15140F;border-right:2px solid #15140F;padding:26px 24px;transition:background .18s" style-hover="background:#15140F;color:#ECE9E0"><span style="font:700 11px/1 'JetBrains Mono';color:#E5642A;letter-spacing:.06em">FRACTIONAL COO</span><h3 style="font:700 18px/1.18 'Archivo';margin:14px 0 8px">Scaling chaos → operating control at a regional MSP</h3><span style="font:600 12px/1 'JetBrains Mono'">READ →</span></a>
+      <a href="case-regional-msp-turnaround.html" class="rv case" style="opacity:0;transform:translateY(24px);transition-delay:.07s;text-decoration:none;color:#15140F;border-right:2px solid #15140F;padding:26px 24px;transition:background .18s" style-hover="background:#15140F;color:#ECE9E0"><span style="font:700 11px/1 'JetBrains Mono';color:#E5642A;letter-spacing:.06em">PROFITABILITY</span><h3 style="font:700 18px/1.18 'Archivo';margin:14px 0 8px">Finding the margin leaks in a services firm</h3><span style="font:600 12px/1 'JetBrains Mono'">READ →</span></a>
+      <a href="case-regional-msp-turnaround.html" class="rv case" style="opacity:0;transform:translateY(24px);transition-delay:.14s;text-decoration:none;color:#15140F;padding:26px 24px;transition:background .18s" style-hover="background:#15140F;color:#ECE9E0"><span style="font:700 11px/1 'JetBrains Mono';color:#E5642A;letter-spacing:.06em">CEO COACHING</span><h3 style="font:700 18px/1.18 'Archivo';margin:14px 0 8px">From founder bottleneck to scalable CEO</h3><span style="font:600 12px/1 'JetBrains Mono'">READ →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section id="contact" style="background:#E5642A;color:#15140F;padding:88px 0;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(21,20,15,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(21,20,15,.06) 1px,transparent 1px);background-size:64px 64px;pointer-events:none"></div>
+  <div style="position:relative;max-width:1280px;margin:0 auto;padding:0 32px">
+    <div class="rv" style="opacity:0;transform:translateY(22px);max-width:30ch">
+      <span style="font:700 12px/1 'JetBrains Mono';letter-spacing:.06em">006 / LET'S TALK</span>
+      <h2 style="font:800 clamp(34px,5.4vw,72px)/.96 'Archivo',sans-serif;letter-spacing:-.035em;margin:18px 0 22px">Let's talk about what's really going on.</h2>
+    </div>
+    <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between;border-top:2px solid #15140F;padding-top:26px">
+      <p style="font:400 16px/1.55 system-ui;color:#3a1c0c;max-width:52ch;margin:0">A confidential, no-pressure conversation about where you're stuck — and whether I can help. Thirty minutes, no deck.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a href="mailto:scottgordon2002@gmail.com?subject=Let's%20talk" data-magnet style="font:700 14px/1 'Archivo';color:#ECE9E0;background:#15140F;padding:17px 28px;text-decoration:none;transition:transform .12s" style-hover="transform:translateY(-2px)">BOOK A CALL</a>
+        <a href="https://www.linkedin.com/in/scott-gordon-7668b12/" target="_blank" rel="noopener" style="font:700 14px/1 'Archivo';color:#15140F;border:2px solid #15140F;padding:15px 26px;text-decoration:none;transition:background .15s,color .15s" style-hover="background:#15140F;color:#E5642A">LINKEDIN</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer style="background:#15140F;color:#a7a299;padding:54px 0 30px">
+  <div style="max-width:1280px;margin:0 auto;padding:0 32px">
+    <div style="display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-start;border-bottom:1px solid rgba(236,233,224,.16);padding-bottom:30px">
+      <div>
+        <a href="index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none">
+          <span style="position:relative;width:32px;height:32px;background:#E5642A;flex:none;display:block">
+            <span style="position:absolute;left:6px;bottom:7px;width:5px;height:7px;background:#15140F"></span>
+            <span style="position:absolute;left:13.5px;bottom:7px;width:5px;height:12px;background:#15140F"></span>
+            <span style="position:absolute;left:21px;bottom:7px;width:5px;height:18px;background:#15140F"></span>
+          </span>
+          <span style="display:flex;flex-direction:column"><span style="font:800 16px/1 'Archivo';color:#ECE9E0;letter-spacing:-.01em">C&#8209;LEVEL</span><span style="font:600 8px/1 'JetBrains Mono';letter-spacing:.34em;color:#7d786c;margin-top:4px">ADVISING</span></span>
+        </a>
+        <p style="font:400 13.5px/1.6 system-ui;max-width:42ch;margin:14px 0 0">Fractional COO / President, CEO coach, and AI advisor. Helping growth-stage CEOs find the gaps, fix them, and put AI to work safely.</p>
+      </div>
+      <div style="display:flex;gap:48px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:9px"><span style="font:600 10px/1 'JetBrains Mono';color:#5a564c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px">Explore</span><a href="#services" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Services</a><a href="#approach" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Approach</a><a href="#work" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Work</a><a href="ai.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">AI virtual employees</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><span style="font:600 10px/1 'JetBrains Mono';color:#5a564c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px">Contact</span><a href="mailto:scottgordon2002@gmail.com" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">scottgordon2002@gmail.com</a><a href="https://www.linkedin.com/in/scott-gordon-7668b12/" target="_blank" rel="noopener" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">LinkedIn</a></div>
+      </div>
+    </div>
+    <div style="font:500 11px/1 'JetBrains Mono';color:#5a564c;margin-top:22px">© <span data-year>2026</span> C&#8209;LEVEL ADVISING · SCOTT GORDON</div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){
+    // ============ REVEAL (rAF; CSS anim/transitions freeze in this runtime) ============
+    const els = Array.prototype.slice.call(document.querySelectorAll('.rv'));
+    const shown = new WeakSet();
+    const tween = (el, delay)=>{
+      const startTf = el.style.transform || 'none';
+      let from=0,to=0; const m = startTf.match(/translateY\(([-\d.]+)px\)/);
+      if(m){ from=parseFloat(m[1]); }
+      const dur=700; let t0=null;
+      const step=(ts)=>{ if(t0===null)t0=ts; const e2=ts-t0; if(e2<delay){requestAnimationFrame(step);return;}
+        const p=Math.min(1,(e2-delay)/dur); const e=1-Math.pow(1-p,3);
+        el.style.opacity=String(e); el.style.transform='translateY('+(from*(1-e))+'px)';
+        if(p<1)requestAnimationFrame(step); else {el.style.opacity='1';el.style.transform='none';} };
+      requestAnimationFrame(step);
+    };
+    const show = (el)=>{ if(shown.has(el))return; shown.add(el);
+      const d=(parseFloat(getComputedStyle(el).transitionDelay)||0)*1000;
+      el.style.setProperty('transition','none','important'); tween(el,d);
+      if(el.querySelectorAll)Array.prototype.slice.call(el.querySelectorAll('[data-count]')).forEach(c=>run(c)); };
+    const reveal = ()=>{ const vh=window.innerHeight; els.forEach(el=>{ if(shown.has(el))return; const r=el.getBoundingClientRect(); if(r.top<vh*0.9 && r.bottom>0) show(el); }); };
+    this._reveal=reveal; requestAnimationFrame(()=>requestAnimationFrame(reveal));
+    window.addEventListener('scroll',reveal,{passive:true}); window.addEventListener('resize',reveal);
+    document.addEventListener('scroll',reveal,{passive:true,capture:true});
+    let n=0; this._iv=setInterval(()=>{reveal(); if(++n>60)clearInterval(this._iv);},130);
+    this._safety=setTimeout(()=>{var vh=window.innerHeight;els.forEach(e=>{var r=e.getBoundingClientRect();if(r.top<vh&&r.bottom>0){e.style.setProperty('transition','none','important');e.style.opacity='1';e.style.transform='none';}});},1400);
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden)reveal();});
+
+    // ============ COUNT-UPS ============
+    const counters=Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
+    const counted=new WeakSet();
+    const run=(el)=>{ if(counted.has(el))return; counted.add(el);
+      const to=parseFloat(el.getAttribute('data-count')); const suf=el.getAttribute('data-suffix')||'';
+      const dur=1500,t0=performance.now(); const ease=(t)=>1-Math.pow(1-t,3);
+      const tick=(now)=>{const p=Math.min(1,(now-t0)/dur); el.textContent=Math.round(to*ease(p))+suf; if(p<1)requestAnimationFrame(tick);}; requestAnimationFrame(tick); };
+    const cc=()=>{const vh=window.innerHeight; counters.forEach(el=>{if(counted.has(el))return; const r=el.getBoundingClientRect(); if(r.top<vh*0.88 && r.bottom>0)run(el);});};
+    this._cc=cc; window.addEventListener('scroll',cc,{passive:true}); document.addEventListener('scroll',cc,{passive:true,capture:true});
+    let m2=0; this._civ=setInterval(()=>{cc(); if(++m2>60)clearInterval(this._civ);},130);
+
+    // ============ PULSE dots (rAF) ============
+    const pulses=Array.prototype.slice.call(document.querySelectorAll('[data-pulse]'));
+    const pulse=(now)=>{ const v=0.5+0.5*Math.sin(now/360); pulses.forEach(p=>{p.style.opacity=String(0.45+0.55*v); p.style.transform='scale('+(0.85+0.25*v)+')';}); this._praf=requestAnimationFrame(pulse); };
+    this._praf=requestAnimationFrame(pulse);
+
+    // ============ LIVE CLOCK ============
+    const clock=document.querySelector('[data-clock]');
+    if(clock){ const upd=()=>{const d=new Date(); clock.textContent=[d.getHours(),d.getMinutes(),d.getSeconds()].map(x=>String(x).padStart(2,'0')).join(':');}; upd(); this._clk=setInterval(upd,1000); }
+
+    // ============ YEAR ============
+    const yr=document.querySelector('[data-year]'); if(yr)yr.textContent=new Date().getFullYear();
+
+    // ============ LOGO bars — animated equalizer on hover ============
+    const logo=document.querySelector('[data-logo]');
+    if(logo){
+      const bars=Array.prototype.slice.call(logo.querySelectorAll('[data-bar]'));
+      const base=[7,12,18]; let hov=false, lraf=null;
+      const anim=(now)=>{ bars.forEach((b,i)=>{ const h=base[i]+(hov?(4+5*Math.abs(Math.sin(now/180+i*1.3))):0); b.style.height=h+'px'; }); if(hov||bars.some((b,i)=>Math.abs(parseFloat(b.style.height)-base[i])>0.4)){ lraf=requestAnimationFrame(anim);} else { bars.forEach((b,i)=>b.style.height=base[i]+'px'); lraf=null; } };
+      logo.addEventListener('mouseenter',()=>{ hov=true; bars.forEach(b=>b.style.transition='none'); if(!lraf)lraf=requestAnimationFrame(anim); });
+      logo.addEventListener('mouseleave',()=>{ hov=false; });
+      this._lraf=()=>lraf&&cancelAnimationFrame(lraf);
+    }
+
+    // ============ AI DEMO ============
+    const TASKS={
+      invoices:{ title:'ai-employee — accounts receivable', steps:[
+        'connect → quickbooks · stripe · bank feed','pull open invoices ............ 142 found','match payments → invoices .... 128 auto-matched','exceptions flagged ........... 9 partial · 5 unmatched','re-checking unmatched against remittances','reconciliation complete ✓'],
+        output:{head:'Reconciled in 0.9s',lines:['137 of 142 invoices cleared automatically','14 exceptions queued for human review','Ledger now matches bank to the cent'],compare:'Human equivalent: ~5.5 hrs · weekly'} },
+      followups:{ title:'ai-employee — collections', steps:[
+        'scan aging report ............ 31 past-due','segment by relationship & risk','draft tailored follow-ups ..... 31 messages','tone: firm, on-brand, polite','route 4 sensitive accounts → you','drafts ready ✓'],
+        output:{head:'31 follow-ups drafted in 1.2s',lines:['27 ready to send · 4 escalated to you','Personalized to each account history','Projected to recover $74k this cycle'],compare:'Human equivalent: ~4 hrs · daily'} },
+      risk:{ title:'ai-employee — account health', steps:[
+        'ingest usage · tickets · invoices · sentiment','score 214 accounts ........... done','cross-check against churn signals','rank by revenue at risk','compile watchlist + reasons','watchlist ready ✓'],
+        output:{head:'7 at-risk accounts surfaced',lines:['$310k ARR flagged before renewal','Each with the why + a next action','3 you would not have caught manually'],compare:'Human equivalent: continuous monitoring'} },
+      brief:{ title:'ai-employee — operations', steps:[
+        'gather KPIs from 6 systems','reconcile overnight changes','detect anomalies ............. 2 found','summarize what changed & why','format for leadership','brief delivered ✓'],
+        output:{head:'Daily ops brief at 6:00am',lines:['One page: what moved, what to watch','2 anomalies caught (margin · utilization)','Waiting in your inbox before standup'],compare:'Human equivalent: ~1.5 hrs · every morning'} } };
+    const logEl=document.querySelector('[data-log]');
+    const outEl=document.querySelector('[data-output]');
+    const titleEl=document.querySelector('[data-title]');
+    const btns=Array.prototype.slice.call(document.querySelectorAll('[data-task]'));
+    const stamp=()=>{const d=new Date(); return [d.getHours(),d.getMinutes(),d.getSeconds()].map(x=>String(x).padStart(2,'0')).join(':');};
+    let runId=0;
+    const runTask=(key)=>{
+      const t=TASKS[key]; if(!t)return; const myId=++runId;
+      btns.forEach(b=>{ const on=b.getAttribute('data-task')===key; b.style.borderColor=on?'#E5642A':'rgba(236,233,224,.25)'; b.style.background=on?'rgba(229,100,42,.14)':'transparent'; });
+      if(titleEl)titleEl.textContent=t.title;
+      if(outEl){outEl.style.display='none'; outEl.innerHTML='';}
+      logEl.innerHTML='<div style="color:#39c46a">› dispatching virtual employee…</div>';
+      logEl.scrollTop=logEl.scrollHeight;
+      let i=0;
+      const next=()=>{ if(myId!==runId)return; if(i<t.steps.length){
+          const line=document.createElement('div'); line.style.cssText='opacity:.95;margin-top:4px';
+          line.innerHTML='<span style="color:#5a564c">'+stamp()+'</span>  <span style="color:#c9c4b6">'+t.steps[i]+'</span>';
+          logEl.appendChild(line); logEl.scrollTop=logEl.scrollHeight; i++; this._demoTo=setTimeout(next,430);
+        } else { showOut(t.output); } };
+      this._demoTo=setTimeout(next,360);
+    };
+    const showOut=(o)=>{ if(!outEl)return; outEl.style.display='block';
+      outEl.innerHTML='<div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px"><span style="width:8px;height:8px;border-radius:50%;background:#39c46a;flex:none"></span><span style="font:800 17px/1.1 \'Archivo\',sans-serif;color:#ECE9E0">'+o.head+'</span></div>'+
+        '<div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px">'+o.lines.map(l=>'<div style="font:500 13px/1.4 system-ui;color:#c9c4b6">— '+l+'</div>').join('')+'</div>'+
+        '<div style="font:600 11px/1 \'JetBrains Mono\',monospace;color:#E5642A;letter-spacing:.04em">'+o.compare+'</div>';
+      logEl.scrollTop=logEl.scrollHeight; };
+    btns.forEach(b=>b.addEventListener('click',()=>runTask(b.getAttribute('data-task'))));
+
+    // ============ BEFORE/AFTER SLIDER ============
+    const ba=document.querySelector('[data-ba]');
+    if(ba){
+      const before=ba.querySelector('[data-before]'); const handle=ba.querySelector('[data-handle]');
+      let dragging=false;
+      const set=(clientX)=>{ const r=ba.getBoundingClientRect(); let p=(clientX-r.left)/r.width; p=Math.max(0,Math.min(1,p));
+        before.style.clipPath='inset(0 '+((1-p)*100)+'% 0 0)'; handle.style.left=(p*100)+'%'; };
+      const down=(e)=>{dragging=true; set((e.touches?e.touches[0].clientX:e.clientX)); e.preventDefault();};
+      const move=(e)=>{ if(!dragging)return; set((e.touches?e.touches[0].clientX:e.clientX)); };
+      const up=()=>{dragging=false;};
+      ba.addEventListener('mousedown',down); ba.addEventListener('touchstart',down,{passive:false});
+      window.addEventListener('mousemove',move); window.addEventListener('touchmove',move,{passive:false});
+      window.addEventListener('mouseup',up); window.addEventListener('touchend',up);
+      this._baMove=move; this._baUp=up;
+    }
+  }
+  componentWillUnmount(){
+    [this._iv,this._civ].forEach(x=>x&&clearInterval(x));
+    [this._safety,this._demoTo].forEach(x=>x&&clearTimeout(x));
+    if(this._clk)clearInterval(this._clk);
+    [this._praf].forEach(x=>x&&cancelAnimationFrame(x));
+    if(this._reveal){window.removeEventListener('scroll',this._reveal);window.removeEventListener('resize',this._reveal);document.removeEventListener('scroll',this._reveal,true);}
+    if(this._cc){window.removeEventListener('scroll',this._cc);document.removeEventListener('scroll',this._cc,true);}
+    if(this._baMove){window.removeEventListener('mousemove',this._baMove);window.removeEventListener('touchmove',this._baMove);window.removeEventListener('mouseup',this._baUp);window.removeEventListener('touchend',this._baUp);}
+    if(this._lraf)this._lraf();
+  }
+}
+</script>
+</body>
+</html>
