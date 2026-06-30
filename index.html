@@ -17,32 +17,31 @@ html{scroll-behavior:smooth}
 body{margin:0;background:#ECE9E0;color:#15140F;font-family:system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 ::selection{background:#E5642A;color:#ECE9E0}
 a{color:inherit}
+@keyframes pivotLoop{0%,8%{transform:rotate(0)}16%,24%{transform:rotate(90deg)}32%,40%{transform:rotate(180deg)}48%,56%{transform:rotate(270deg)}64%,100%{transform:rotate(360deg)}}
 </style>
+<link rel="stylesheet" href="responsive.css">
 </helmet>
 
 <!-- ================= NAV ================= -->
 <header style="position:sticky;top:0;z-index:90;background:rgba(236,233,224,.9);backdrop-filter:blur(10px);border-bottom:2px solid #15140F">
   <div style="max-width:1280px;margin:0 auto;padding:0 32px;height:66px;display:flex;align-items:center;gap:22px">
     <a href="index.html" data-logo style="display:flex;align-items:center;gap:11px;text-decoration:none">
-      <span style="position:relative;width:32px;height:32px;background:#15140F;flex:none;display:block">
-        <span data-bar style="position:absolute;left:6px;bottom:7px;width:5px;height:7px;background:#E5642A;transition:height .2s"></span>
-        <span data-bar style="position:absolute;left:13.5px;bottom:7px;width:5px;height:12px;background:#E5642A;transition:height .2s"></span>
-        <span data-bar style="position:absolute;left:21px;bottom:7px;width:5px;height:18px;background:#E5642A;transition:height .2s"></span>
-      </span>
+      <span style="position:relative;width:32px;height:32px;background:#15140F;flex:none;display:block;overflow:hidden"><span style="position:absolute;inset:0;animation:pivotLoop 6s cubic-bezier(.65,0,.35,1) .4s infinite"><span style="position:absolute;left:0;top:0;width:16px;height:16px;background:#E5642A"></span></span></span>
       <span style="display:flex;flex-direction:column">
-        <span style="font:800 15px/1 'Archivo',sans-serif;letter-spacing:-.01em;color:#15140F">C&#8209;LEVEL</span>
-        <span style="font:600 8px/1 'JetBrains Mono',monospace;letter-spacing:.34em;color:#6b6759;margin-top:4px">ADVISING</span>
+        <span style="font:800 15px/1 'Archivo',sans-serif;letter-spacing:-.01em;color:#15140F">C&#8209;Level</span>
+        <span style="font:700 8.5px/1 'JetBrains Mono',monospace;letter-spacing:.3em;color:#2c2a24;margin-top:4px">ADVISING</span>
       </span>
     </a>
     <span style="width:1px;height:18px;background:#15140F;opacity:.25"></span>
-    <span style="font:600 10px/1.3 'JetBrains Mono',monospace;color:#6b6759;letter-spacing:.08em;text-transform:uppercase">Scott Gordon<br>Fractional COO · AI</span>
+    <span style="font:600 10px/1.3 'JetBrains Mono',monospace;color:#6b6759;letter-spacing:.08em;text-transform:uppercase">Fractional COO · AI</span>
     <nav style="margin-left:auto;display:flex;gap:20px;align-items:center">
+      <a href="index.html" style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;text-decoration:none;letter-spacing:.04em;text-transform:uppercase;border-bottom:2px solid #E5642A;padding-bottom:5px">Home</a>
       <a href="about.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">About</a>
       <a href="approach.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Approach</a>
       <a href="services.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Services</a>
       <a href="problems.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Problems</a>
       <a href="ai.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#E5642A;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">AI</a>
-      <a href="case-studies.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Work</a>
+      <a href="case-studies.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Case Studies</a>
       <a href="insights.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Insights</a>
       <a href="contact.html" data-magnet style="font:700 12px/1 'Archivo',sans-serif;color:#ECE9E0;background:#15140F;padding:12px 18px;text-decoration:none;letter-spacing:.02em;transition:background .15s" style-hover="background:#E5642A">BOOK A CALL</a>
     </nav>
@@ -53,17 +52,13 @@ a{color:inherit}
 <section style="position:relative;overflow:hidden;background:#ECE9E0">
   <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(21,20,15,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(21,20,15,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none"></div>
   <div style="position:relative;max-width:1280px;margin:0 auto;padding:74px 32px 0">
-    <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;align-items:center;gap:14px;margin-bottom:34px;flex-wrap:wrap">
-      <span style="font:700 11px/1 'JetBrains Mono',monospace;letter-spacing:.05em;color:#E5642A;background:rgba(229,100,42,.12);padding:7px 11px">001 / OPERATOR</span>
-      <span style="display:flex;align-items:center;gap:8px"><span data-pulse style="width:8px;height:8px;border-radius:50%;background:#1f8a3b"></span><span style="font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6b6759">Available · 2 fractional seats open</span></span>
-    </div>
     <h1 style="font:800 clamp(48px,8.4vw,124px)/.9 'Archivo',sans-serif;letter-spacing:-.045em;margin:0 0 32px">
       <span class="rv" style="opacity:0;transform:translateY(34px);display:block">Find the</span>
       <span class="rv" style="opacity:0;transform:translateY(34px);display:block"><span style="color:#E5642A">blind spots.</span></span>
       <span class="rv" style="opacity:0;transform:translateY(34px);display:block">Fix the gaps.</span>
     </h1>
     <div style="display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:end;border-top:2px solid #15140F;padding:28px 0 56px">
-      <p class="rv" style="opacity:0;transform:translateY(20px);font:400 clamp(16px,1.55vw,20px)/1.55 system-ui;color:#3a382f;max-width:56ch;margin:0">I'm a hands-on fractional COO/President and CEO coach for growth-stage companies — surfacing what leadership can't see, fixing the core challenges, and launching AI the right way, including <b style="color:#15140F;font-weight:700">AI virtual employees that run 24/7</b> at a fraction of the cost of headcount.</p>
+      <p class="rv" style="opacity:0;transform:translateY(20px);font:400 clamp(16px,1.55vw,20px)/1.55 system-ui;color:#3a382f;max-width:56ch;margin:0">We're a hands-on fractional COO/President and CEO-coaching practice for growth-stage companies — surfacing what leadership can't see, fixing the core challenges, and launching AI the right way, including <b style="color:#15140F;font-weight:700">AI virtual employees that run 24/7</b> at a fraction of the cost of headcount.</p>
       <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;gap:12px;justify-content:flex-end;flex-wrap:wrap">
         <a href="#contact" data-magnet style="font:700 14px/1 'Archivo',sans-serif;color:#ECE9E0;background:#15140F;padding:17px 26px;text-decoration:none;transition:background .15s" style-hover="background:#E5642A">BOOK A CALL</a>
         <a href="#demo" style="font:700 14px/1 'Archivo',sans-serif;color:#15140F;border:2px solid #15140F;padding:15px 24px;text-decoration:none;transition:background .15s,color .15s" style-hover="background:#15140F;color:#ECE9E0">SEE THE AI DEMO</a>
@@ -77,8 +72,8 @@ a{color:inherit}
   <div style="max-width:1280px;margin:0 auto;padding:0 32px">
     <div class="rv" style="opacity:0;transform:translateY(24px);display:grid;grid-template-columns:repeat(4,1fr);border:2px solid #15140F">
       <div style="padding:32px 26px;border-right:2px solid #15140F"><div data-count="30" data-suffix="+" style="font:800 clamp(40px,4.4vw,60px)/1 'Archivo',sans-serif;letter-spacing:-.03em">0</div><div style="font:600 11px/1.4 'JetBrains Mono',monospace;color:#6b6759;margin-top:10px;letter-spacing:.04em;text-transform:uppercase">Years operating &amp; scaling</div></div>
-      <div style="padding:32px 26px;border-right:2px solid #15140F"><div data-count="20" data-suffix="+" style="font:800 clamp(40px,4.4vw,60px)/1 'Archivo',sans-serif;letter-spacing:-.03em">0</div><div style="font:600 11px/1.4 'JetBrains Mono',monospace;color:#6b6759;margin-top:10px;letter-spacing:.04em;text-transform:uppercase">Companies advised since 2021</div></div>
-      <div style="padding:32px 26px;border-right:2px solid #15140F;background:#E5642A"><div style="font:800 clamp(40px,4.4vw,60px)/1 'Archivo',sans-serif;letter-spacing:-.03em;color:#15140F">24/7</div><div style="font:600 11px/1.4 'JetBrains Mono',monospace;color:#3a1c0c;margin-top:10px;letter-spacing:.04em;text-transform:uppercase">AI virtual employees</div></div>
+      <div style="padding:32px 26px;border-right:2px solid #15140F;background:#E5642A"><div data-count="20" data-suffix="+" style="font:800 clamp(40px,4.4vw,60px)/1 'Archivo',sans-serif;letter-spacing:-.03em;color:#15140F">0</div><div style="font:600 11px/1.4 'JetBrains Mono',monospace;color:#3a1c0c;margin-top:10px;letter-spacing:.04em;text-transform:uppercase">Companies advised since 2021</div></div>
+      <div style="padding:32px 26px;border-right:2px solid #15140F"><div data-count="8" data-suffix="+" style="font:800 clamp(40px,4.4vw,60px)/1 'Archivo',sans-serif;letter-spacing:-.03em">0</div><div style="font:600 11px/1.4 'JetBrains Mono',monospace;color:#6b6759;margin-top:10px;letter-spacing:.04em;text-transform:uppercase">Industries operated in</div></div>
       <div style="padding:32px 26px"><div style="font:800 clamp(40px,4.4vw,60px)/1 'Archivo',sans-serif;letter-spacing:-.03em">2021</div><div style="font:600 11px/1.4 'JetBrains Mono',monospace;color:#6b6759;margin-top:10px;letter-spacing:.04em;text-transform:uppercase">CLevelAdvising founded</div></div>
     </div>
   </div>
@@ -88,9 +83,9 @@ a{color:inherit}
 <section id="services" style="background:#ECE9E0;padding:96px 0">
   <div style="max-width:1280px;margin:0 auto;padding:0 32px">
     <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid #15140F;padding-bottom:18px;margin-bottom:0">
-      <h2 style="font:800 clamp(28px,3.6vw,46px)/1 'Archivo',sans-serif;letter-spacing:-.03em;margin:0">What I do</h2>
-      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">002 / CAPABILITIES</span>
-    </div>
+      <h2 style="font:800 clamp(28px,3.6vw,46px)/1 'Archivo',sans-serif;letter-spacing:-.03em;margin:0">What we do</h2>
+      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">CAPABILITIES</span>
+      </div>
     <div style="display:grid;grid-template-columns:repeat(2,1fr)">
       <div class="svc rv" style="opacity:0;transform:translateY(24px);border-bottom:2px solid #15140F;border-right:2px solid #15140F;padding:34px 32px 34px 0;cursor:default;transition:background .18s,padding .18s">
         <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:12px"><span style="font:700 13px/1 'JetBrains Mono',monospace;color:#E5642A">01</span><h3 style="font:700 23px/1.1 'Archivo',sans-serif;margin:0">Fractional COO / President</h3></div>
@@ -117,9 +112,9 @@ a{color:inherit}
   <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(236,233,224,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(236,233,224,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none"></div>
   <div style="position:relative;max-width:1280px;margin:0 auto;padding:0 32px">
     <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid #ECE9E0;padding-bottom:18px">
-      <h2 style="font:800 clamp(28px,3.6vw,46px)/1 'Archivo',sans-serif;letter-spacing:-.03em;margin:0">How I work</h2>
-      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">003 / METHOD</span>
-    </div>
+      <h2 style="font:800 clamp(28px,3.6vw,46px)/1 'Archivo',sans-serif;letter-spacing:-.03em;margin:0">How we work</h2>
+      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">METHOD</span>
+      </div>
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0">
       <div class="rv" style="opacity:0;transform:translateY(26px);border-right:1px solid rgba(236,233,224,.18);padding:34px 26px 0 0"><div style="font:800 30px/1 'Archivo';color:#E5642A;margin-bottom:18px">01</div><h3 style="font:700 19px/1.15 'Archivo';margin:0 0 10px">See clearly</h3><p style="font:400 14px/1.6 system-ui;color:#a7a299;margin:0">Dig into how the business actually runs and surface the blind spots leadership can't see from inside.</p></div>
       <div class="rv" style="opacity:0;transform:translateY(26px);transition-delay:.07s;border-right:1px solid rgba(236,233,224,.18);padding:34px 26px 0"><div style="font:800 30px/1 'Archivo';color:#E5642A;margin-bottom:18px">02</div><h3 style="font:700 19px/1.15 'Archivo';margin:0 0 10px">Find the gaps</h3><p style="font:400 14px/1.6 system-ui;color:#a7a299;margin:0">Pinpoint the core challenges in visibility, data integrity, and execution that hold growth back.</p></div>
@@ -133,9 +128,9 @@ a{color:inherit}
 <section id="demo" style="background:#15140F;color:#ECE9E0;padding:0 0 100px;position:relative">
   <div style="max-width:1280px;margin:0 auto;padding:0 32px">
     <div class="rv" style="opacity:0;transform:translateY(20px);border-top:2px solid #E5642A;padding-top:40px">
-      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">004 / THE DIFFERENTIATOR</span>
+      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">THE DIFFERENTIATOR</span>
       <h2 style="font:800 clamp(30px,4.6vw,60px)/.98 'Archivo',sans-serif;letter-spacing:-.035em;margin:18px 0 14px;max-width:20ch">AI virtual employees, launched the right way.</h2>
-      <p style="font:400 16px/1.6 system-ui;color:#a7a299;max-width:64ch;margin:0 0 38px">Pick a task below and watch a virtual employee work it in real time. They run around the clock at a fraction of the cost of headcount — and I deploy and oversee them so they stay safe and accountable.</p>
+      <p style="font:400 16px/1.6 system-ui;color:#a7a299;max-width:64ch;margin:0 0 38px">Pick a task below and watch a virtual employee work it in real time. They run around the clock at a fraction of the cost of headcount — and we deploy and oversee them so they stay safe and accountable.</p>
     </div>
 
     <div class="rv" style="opacity:0;transform:translateY(28px);border:2px solid #ECE9E0;background:#0f0e0a;display:grid;grid-template-columns:300px 1fr">
@@ -171,16 +166,44 @@ a{color:inherit}
 </section>
 
 <!-- ================= SELECTED WORK + BEFORE/AFTER ================= -->
+<!-- ================= DATA FOUNDATIONS ================= -->
+<section style="background:#ECE9E0;padding:96px 0;border-top:2px solid #15140F">
+  <div style="max-width:1280px;margin:0 auto;padding:0 32px">
+    <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid #15140F;padding-bottom:18px;margin-bottom:30px">
+      <h2 style="font:800 clamp(28px,3.6vw,46px)/1 'Archivo',sans-serif;letter-spacing:-.03em;margin:0">Clean data first</h2>
+      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">DATA FOUNDATIONS</span>
+    </div>
+    <p class="rv" style="opacity:0;transform:translateY(18px);font:400 17px/1.65 system-ui;color:#3a382f;max-width:76ch;margin:0 0 40px">In most organizations the data needed to run the business lives in many disconnected places — financial systems, HR, sales reports, databases, operations systems, CRMs — each with its own format, gaps, and duplicates. No dashboard, analysis, or AI is trustworthy until that data has been audited and cleaned. <b>That groundwork is the work I do first.</b></p>
+    <div class="rv" style="opacity:0;transform:translateY(20px);display:grid;grid-template-columns:1fr 1.15fr 1fr;border:2px solid #15140F">
+      <div style="padding:26px 24px;border-right:2px solid #15140F">
+        <div style="font:700 11px/1 'JetBrains Mono';color:#6b6759;letter-spacing:.08em;margin-bottom:18px">01 · WHERE IT LIVES</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px"><span style="font:600 10.5px/1 'JetBrains Mono';color:#3a382f;border:1px solid rgba(21,20,15,.32);padding:7px 9px">Financial systems</span><span style="font:600 10.5px/1 'JetBrains Mono';color:#3a382f;border:1px solid rgba(21,20,15,.32);padding:7px 9px">HR</span><span style="font:600 10.5px/1 'JetBrains Mono';color:#3a382f;border:1px solid rgba(21,20,15,.32);padding:7px 9px">Sales reports</span><span style="font:600 10.5px/1 'JetBrains Mono';color:#3a382f;border:1px solid rgba(21,20,15,.32);padding:7px 9px">Databases</span><span style="font:600 10.5px/1 'JetBrains Mono';color:#3a382f;border:1px solid rgba(21,20,15,.32);padding:7px 9px">Operations</span><span style="font:600 10.5px/1 'JetBrains Mono';color:#3a382f;border:1px solid rgba(21,20,15,.32);padding:7px 9px">CRMs</span></div>
+        <p style="font:400 13px/1.5 system-ui;color:#5a574c;margin:18px 0 0">Scattered across six-plus systems that don&rsquo;t agree with each other.</p>
+      </div>
+      <div style="padding:26px 24px;border-right:2px solid #15140F;background:#15140F">
+        <div style="font:700 11px/1 'JetBrains Mono';color:#E5642A;letter-spacing:.08em;margin-bottom:18px">02 · THE AUDIT &amp; CLEAN</div>
+        <div style="display:flex;flex-direction:column;gap:14px"><div style="display:flex;gap:11px;align-items:flex-start"><span style="font:700 12px/1.2 'JetBrains Mono';color:#E5642A;flex:none;width:14px">→</span><div><div style="font:700 13px/1.1 'Archivo';color:#ECE9E0">Audit</div><div style="font:400 12px/1.45 system-ui;color:#a7a299;margin-top:3px">Inventory every source, field, and owner.</div></div></div><div style="display:flex;gap:11px;align-items:flex-start"><span style="font:700 12px/1.2 'JetBrains Mono';color:#E5642A;flex:none;width:14px">→</span><div><div style="font:700 13px/1.1 'Archivo';color:#ECE9E0">Reconcile</div><div style="font:400 12px/1.45 system-ui;color:#a7a299;margin-top:3px">Resolve conflicts, dedupe, fill the gaps.</div></div></div><div style="display:flex;gap:11px;align-items:flex-start"><span style="font:700 12px/1.2 'JetBrains Mono';color:#E5642A;flex:none;width:14px">→</span><div><div style="font:700 13px/1.1 'Archivo';color:#ECE9E0">Validate</div><div style="font:400 12px/1.45 system-ui;color:#a7a299;margin-top:3px">Accuracy checks against the system of record.</div></div></div><div style="display:flex;gap:11px;align-items:flex-start"><span style="font:700 12px/1.2 'JetBrains Mono';color:#E5642A;flex:none;width:14px">→</span><div><div style="font:700 13px/1.1 'Archivo';color:#ECE9E0">Unify</div><div style="font:400 12px/1.45 system-ui;color:#a7a299;margin-top:3px">One clean, documented data layer.</div></div></div></div>
+      </div>
+      <div style="padding:26px 24px;display:flex;flex-direction:column">
+        <div style="font:700 11px/1 'JetBrains Mono';color:#6b6759;letter-spacing:.08em;margin-bottom:18px">03 · WHAT YOU GET</div>
+        <div style="font:800 26px/1.05 'Archivo';letter-spacing:-.02em;margin-bottom:14px">One source of truth</div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px"><span style="font:700 9.5px/1 'JetBrains Mono';letter-spacing:.06em;color:#E5642A;border:1px solid rgba(229,100,42,.5);padding:6px 8px;text-transform:uppercase">Accurate</span><span style="font:700 9.5px/1 'JetBrains Mono';letter-spacing:.06em;color:#E5642A;border:1px solid rgba(229,100,42,.5);padding:6px 8px;text-transform:uppercase">Current</span><span style="font:700 9.5px/1 'JetBrains Mono';letter-spacing:.06em;color:#E5642A;border:1px solid rgba(229,100,42,.5);padding:6px 8px;text-transform:uppercase">Trusted</span></div>
+        <p style="font:400 13px/1.5 system-ui;color:#5a574c;margin:auto 0 0">Now dashboards, analytics, and AI actually work — because the numbers underneath them are right.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="work" style="background:#ECE9E0;padding:96px 0">
   <div style="max-width:1280px;margin:0 auto;padding:0 32px">
     <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid #15140F;padding-bottom:18px;margin-bottom:30px">
-      <h2 style="font:800 clamp(28px,3.6vw,46px)/1 'Archivo',sans-serif;letter-spacing:-.03em;margin:0">Selected work</h2>
-      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">005 / EVIDENCE</span>
-    </div>
-    <p class="rv" style="opacity:0;transform:translateY(18px);font:400 15px/1.6 system-ui;color:#5a574c;max-width:60ch;margin:0 0 28px">The recurring before/after of an engagement: scattered, stale, manual reporting becomes real-time visibility leadership can act on. <b>Drag the divider.</b></p>
+      <h2 style="font:800 clamp(28px,3.6vw,46px)/1 'Archivo',sans-serif;letter-spacing:-.03em;margin:0">Then make it visible</h2>
+      <span style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;letter-spacing:.05em">REAL-TIME DASHBOARDS</span>
+      </div>
+    <p class="rv" style="opacity:0;transform:translateY(18px);font:400 15px/1.6 system-ui;color:#5a574c;max-width:60ch;margin:0 0 28px">Once the data is clean, it becomes a live picture of the business — scattered, stale, manual reporting turns into real-time visibility leadership can act on. <b>Drag the divider.</b></p>
 
     <!-- BEFORE/AFTER SLIDER -->
-    <div class="rv" data-ba style="opacity:0;transform:translateY(28px);position:relative;border:2px solid #15140F;height:560px;overflow:hidden;user-select:none;cursor:ew-resize;background:#15140F">
+    <div class="rv" data-ba style="opacity:0;transform:translateY(28px);position:relative;border:2px solid #15140F;height:620px;overflow:hidden;user-select:none;cursor:ew-resize;background:#15140F">
       <!-- AFTER (base) -->
       <div style="position:absolute;inset:0;background:#15140F;color:#ECE9E0;padding:24px 30px;overflow:hidden">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px"><span data-pulse style="width:9px;height:9px;border-radius:50%;background:#39c46a;box-shadow:0 0 10px #39c46a"></span><span style="font:700 12px/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#ECE9E0">LIVE · REAL-TIME VISIBILITY</span><span style="margin-left:auto;font:500 10px/1 'JetBrains Mono';color:#7d786c">updated 2 min ago</span></div>
@@ -189,17 +212,14 @@ a{color:inherit}
           <div style="border:1px solid rgba(236,233,224,.2);padding:16px 18px"><div style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase;margin-bottom:9px">Cash days</div><div style="font:800 32px/1 'Archivo';color:#ECE9E0">41</div><div style="font:500 11px/1 'JetBrains Mono';color:#39c46a;margin-top:7px">▼ 19 days</div></div>
           <div style="border:1px solid rgba(236,233,224,.2);padding:16px 18px"><div style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase;margin-bottom:9px">Util. rate</div><div style="font:800 32px/1 'Archivo';color:#ECE9E0">82%</div><div style="font:500 11px/1 'JetBrains Mono';color:#39c46a;margin-top:7px">▲ on plan</div></div>
         </div>
-        <div style="margin-top:14px;border:1px solid rgba(236,233,224,.2);padding:14px 18px 12px">
-          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px"><span style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase">Gross margin $K · by month</span><span style="font:500 10px/1 'JetBrains Mono';color:#39c46a">▲ trending up</span></div>
-          <div style="display:flex;align-items:flex-end;gap:10px;height:96px">
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><span style="font:700 11px/1 'JetBrains Mono';color:#9a958a">182</span><div style="width:100%;background:rgba(236,233,224,.18);height:46%"></div><span style="font:500 9px/1 'JetBrains Mono';color:#6b6759">JAN</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><span style="font:700 11px/1 'JetBrains Mono';color:#9a958a">201</span><div style="width:100%;background:rgba(236,233,224,.18);height:54%"></div><span style="font:500 9px/1 'JetBrains Mono';color:#6b6759">FEB</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><span style="font:700 11px/1 'JetBrains Mono';color:#c2453f">176</span><div style="width:100%;background:#7a2f2a;height:44%"></div><span style="font:500 9px/1 'JetBrains Mono';color:#6b6759">MAR</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><span style="font:700 11px/1 'JetBrains Mono';color:#9a958a">214</span><div style="width:100%;background:rgba(236,233,224,.18);height:62%"></div><span style="font:500 9px/1 'JetBrains Mono';color:#6b6759">APR</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><span style="font:700 11px/1 'JetBrains Mono';color:#9a958a">242</span><div style="width:100%;background:rgba(236,233,224,.18);height:74%"></div><span style="font:500 9px/1 'JetBrains Mono';color:#6b6759">MAY</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><span style="font:700 11px/1 'JetBrains Mono';color:#E5642A">271</span><div style="width:100%;background:#E5642A;height:86%"></div><span style="font:500 9px/1 'JetBrains Mono';color:#6b6759">JUN</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><span style="font:700 11px/1 'JetBrains Mono';color:#E5642A">288</span><div style="width:100%;background:#E5642A;height:96%"></div><span style="font:500 9px/1 'JetBrains Mono';color:#6b6759">JUL</span></div>
+        <div style="margin-top:14px;border:1px solid rgba(236,233,224,.2);padding:14px 18px 14px">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:4px"><span style="font:600 10px/1 'JetBrains Mono';color:#7d786c;letter-spacing:.08em;text-transform:uppercase">Gross margin $K · by month</span><span style="display:flex;align-items:center;gap:7px;font:500 10px/1 'JetBrains Mono';color:#39c46a">▲ trending up<span style="display:inline-block;width:16px;height:2px;background:#E5642A"></span></span></div>
+          <div style="position:relative;height:124px;margin-top:16px">
+            <div style="position:absolute;inset:0;pointer-events:none"><div style="position:absolute;left:0;right:0;top:0;border-top:1px solid rgba(236,233,224,.07)"></div><div style="position:absolute;left:0;right:0;top:33%;border-top:1px solid rgba(236,233,224,.07)"></div><div style="position:absolute;left:0;right:0;top:66%;border-top:1px solid rgba(236,233,224,.07)"></div><div style="position:absolute;left:0;right:0;bottom:0;border-top:1px solid rgba(236,233,224,.22)"></div></div>
+            <svg viewBox="0 0 700 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible;z-index:2"><polyline points="50,46.6 150,41.0 250,48.4 350,37.2 450,29.0 550,20.5 650,15.5" fill="none" stroke="#E5642A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" opacity=".92"></polyline></svg>
+            <div style="position:absolute;inset:0;display:flex"><div style="flex:1;position:relative"><div style="position:absolute;left:50%;bottom:53.4%;transform:translate(-50%,-5px);font:700 11px/1 'JetBrains Mono';color:#b8b2a6;white-space:nowrap;z-index:4">182</div><div style="position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:54%;height:53.4%;background:rgba(229,100,42,.30)"></div><div style="position:absolute;left:50%;bottom:53.4%;width:7px;height:7px;border-radius:50%;background:#15140F;border:2px solid #E5642A;transform:translate(-50%,50%);z-index:3"></div></div><div style="flex:1;position:relative"><div style="position:absolute;left:50%;bottom:59%;transform:translate(-50%,-5px);font:700 11px/1 'JetBrains Mono';color:#b8b2a6;white-space:nowrap;z-index:4">201</div><div style="position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:54%;height:59%;background:rgba(229,100,42,.30)"></div><div style="position:absolute;left:50%;bottom:59%;width:7px;height:7px;border-radius:50%;background:#15140F;border:2px solid #E5642A;transform:translate(-50%,50%);z-index:3"></div></div><div style="flex:1;position:relative"><div style="position:absolute;left:50%;bottom:51.6%;transform:translate(-50%,-5px);font:700 11px/1 'JetBrains Mono';color:#c2453f;white-space:nowrap;z-index:4">176</div><div style="position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:54%;height:51.6%;background:rgba(178,59,42,.62)"></div><div style="position:absolute;left:50%;bottom:51.6%;width:7px;height:7px;border-radius:50%;background:#15140F;border:2px solid #E5642A;transform:translate(-50%,50%);z-index:3"></div></div><div style="flex:1;position:relative"><div style="position:absolute;left:50%;bottom:62.8%;transform:translate(-50%,-5px);font:700 11px/1 'JetBrains Mono';color:#b8b2a6;white-space:nowrap;z-index:4">214</div><div style="position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:54%;height:62.8%;background:rgba(229,100,42,.30)"></div><div style="position:absolute;left:50%;bottom:62.8%;width:7px;height:7px;border-radius:50%;background:#15140F;border:2px solid #E5642A;transform:translate(-50%,50%);z-index:3"></div></div><div style="flex:1;position:relative"><div style="position:absolute;left:50%;bottom:71%;transform:translate(-50%,-5px);font:700 11px/1 'JetBrains Mono';color:#b8b2a6;white-space:nowrap;z-index:4">242</div><div style="position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:54%;height:71%;background:rgba(229,100,42,.30)"></div><div style="position:absolute;left:50%;bottom:71%;width:7px;height:7px;border-radius:50%;background:#15140F;border:2px solid #E5642A;transform:translate(-50%,50%);z-index:3"></div></div><div style="flex:1;position:relative"><div style="position:absolute;left:50%;bottom:79.5%;transform:translate(-50%,-5px);font:700 11px/1 'JetBrains Mono';color:#E5642A;white-space:nowrap;z-index:4">271</div><div style="position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:54%;height:79.5%;background:#E5642A"></div><div style="position:absolute;left:50%;bottom:79.5%;width:7px;height:7px;border-radius:50%;background:#15140F;border:2px solid #E5642A;transform:translate(-50%,50%);z-index:3"></div></div><div style="flex:1;position:relative"><div style="position:absolute;left:50%;bottom:84.5%;transform:translate(-50%,-5px);font:700 11px/1 'JetBrains Mono';color:#E5642A;white-space:nowrap;z-index:4">288</div><div style="position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:54%;height:84.5%;background:#E5642A"></div><div style="position:absolute;left:50%;bottom:84.5%;width:7px;height:7px;border-radius:50%;background:#15140F;border:2px solid #E5642A;transform:translate(-50%,50%);z-index:3"></div></div></div>
           </div>
+          <div style="display:flex;margin-top:8px"><div style="flex:1;text-align:center;font:500 9px/1 'JetBrains Mono';color:#6b6759">JAN</div><div style="flex:1;text-align:center;font:500 9px/1 'JetBrains Mono';color:#6b6759">FEB</div><div style="flex:1;text-align:center;font:500 9px/1 'JetBrains Mono';color:#6b6759">MAR</div><div style="flex:1;text-align:center;font:500 9px/1 'JetBrains Mono';color:#6b6759">APR</div><div style="flex:1;text-align:center;font:500 9px/1 'JetBrains Mono';color:#6b6759">MAY</div><div style="flex:1;text-align:center;font:500 9px/1 'JetBrains Mono';color:#6b6759">JUN</div><div style="flex:1;text-align:center;font:500 9px/1 'JetBrains Mono';color:#6b6759">JUL</div></div>
         </div>
         <div style="margin-top:14px;border:1px solid rgba(229,100,42,.4);background:rgba(229,100,42,.07);padding:14px 18px">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px"><span style="font:700 14px/1 'JetBrains Mono';color:#E5642A">✦</span><span style="font:700 11px/1 'JetBrains Mono';letter-spacing:.1em;text-transform:uppercase;color:#E5642A">Intelligence · what the system flagged</span></div>
@@ -249,11 +269,11 @@ a{color:inherit}
   <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(21,20,15,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(21,20,15,.06) 1px,transparent 1px);background-size:64px 64px;pointer-events:none"></div>
   <div style="position:relative;max-width:1280px;margin:0 auto;padding:0 32px">
     <div class="rv" style="opacity:0;transform:translateY(22px);max-width:30ch">
-      <span style="font:700 12px/1 'JetBrains Mono';letter-spacing:.06em">006 / LET'S TALK</span>
+      <span style="font:700 12px/1 'JetBrains Mono';letter-spacing:.06em">LET'S TALK</span>
       <h2 style="font:800 clamp(34px,5.4vw,72px)/.96 'Archivo',sans-serif;letter-spacing:-.035em;margin:18px 0 22px">Let's talk about what's really going on.</h2>
     </div>
     <div class="rv" style="opacity:0;transform:translateY(20px);display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between;border-top:2px solid #15140F;padding-top:26px">
-      <p style="font:400 16px/1.55 system-ui;color:#3a1c0c;max-width:52ch;margin:0">A confidential, no-pressure conversation about where you're stuck — and whether I can help. Thirty minutes, no deck.</p>
+      <p style="font:400 16px/1.55 system-ui;color:#3a1c0c;max-width:52ch;margin:0">A confidential, no-pressure conversation about where you're stuck — and whether we can help. Thirty minutes, no deck.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
         <a href="mailto:scottgordon2002@gmail.com?subject=Let's%20talk" data-magnet style="font:700 14px/1 'Archivo';color:#ECE9E0;background:#15140F;padding:17px 28px;text-decoration:none;transition:transform .12s" style-hover="transform:translateY(-2px)">BOOK A CALL</a>
         <a href="https://www.linkedin.com/in/scott-gordon-7668b12/" target="_blank" rel="noopener" style="font:700 14px/1 'Archivo';color:#15140F;border:2px solid #15140F;padding:15px 26px;text-decoration:none;transition:background .15s,color .15s" style-hover="background:#15140F;color:#E5642A">LINKEDIN</a>
@@ -268,17 +288,13 @@ a{color:inherit}
     <div style="display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-start;border-bottom:1px solid rgba(236,233,224,.16);padding-bottom:30px">
       <div>
         <a href="index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none">
-          <span style="position:relative;width:32px;height:32px;background:#E5642A;flex:none;display:block">
-            <span style="position:absolute;left:6px;bottom:7px;width:5px;height:7px;background:#15140F"></span>
-            <span style="position:absolute;left:13.5px;bottom:7px;width:5px;height:12px;background:#15140F"></span>
-            <span style="position:absolute;left:21px;bottom:7px;width:5px;height:18px;background:#15140F"></span>
-          </span>
-          <span style="display:flex;flex-direction:column"><span style="font:800 16px/1 'Archivo';color:#ECE9E0;letter-spacing:-.01em">C&#8209;LEVEL</span><span style="font:600 8px/1 'JetBrains Mono';letter-spacing:.34em;color:#7d786c;margin-top:4px">ADVISING</span></span>
+          <span style="position:relative;width:32px;height:32px;background:#E5642A;flex:none;display:block;overflow:hidden"><span style="position:absolute;left:0;top:0;width:16px;height:16px;background:#15140F"></span></span>
+          <span style="display:flex;flex-direction:column"><span style="font:800 16px/1 'Archivo';color:#ECE9E0;letter-spacing:-.01em">C&#8209;Level</span><span style="font:600 8px/1 'JetBrains Mono';letter-spacing:.34em;color:#7d786c;margin-top:4px">ADVISING</span></span>
         </a>
         <p style="font:400 13.5px/1.6 system-ui;max-width:42ch;margin:14px 0 0">Fractional COO / President, CEO coach, and AI advisor. Helping growth-stage CEOs find the gaps, fix them, and put AI to work safely.</p>
       </div>
       <div style="display:flex;gap:48px;flex-wrap:wrap">
-        <div style="display:flex;flex-direction:column;gap:9px"><span style="font:600 10px/1 'JetBrains Mono';color:#5a564c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px">Explore</span><a href="#services" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Services</a><a href="#approach" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Approach</a><a href="#work" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Work</a><a href="ai.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">AI virtual employees</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><span style="font:600 10px/1 'JetBrains Mono';color:#5a564c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px">Explore</span><a href="#services" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Services</a><a href="#approach" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Approach</a><a href="#work" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Case Studies</a><a href="ai.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">AI virtual employees</a></div>
         <div style="display:flex;flex-direction:column;gap:9px"><span style="font:600 10px/1 'JetBrains Mono';color:#5a564c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px">Contact</span><a href="mailto:scottgordon2002@gmail.com" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">scottgordon2002@gmail.com</a><a href="https://www.linkedin.com/in/scott-gordon-7668b12/" target="_blank" rel="noopener" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">LinkedIn</a></div>
       </div>
     </div>
@@ -314,6 +330,14 @@ class Component extends DCLogic {
     let n=0; this._iv=setInterval(()=>{reveal(); if(++n>60)clearInterval(this._iv);},130);
     this._safety=setTimeout(()=>{var vh=window.innerHeight;els.forEach(e=>{var r=e.getBoundingClientRect();if(r.top<vh&&r.bottom>0){e.style.setProperty('transition','none','important');e.style.opacity='1';e.style.transform='none';}});},1400);
     document.addEventListener('visibilitychange',()=>{if(!document.hidden)reveal();});
+
+    // ============ REVEAL ON IN-PAGE ANCHOR (anchor jumps land on dark sections before scroll-reveal fires) ============
+    const revealTarget=(id)=>{ if(!id)return; const t=document.getElementById(id); if(!t)return; Array.prototype.slice.call(t.querySelectorAll('.rv')).forEach(show); reveal(); };
+    this._hashRv=()=>revealTarget((location.hash||'').slice(1));
+    window.addEventListener('hashchange',this._hashRv);
+    this._clickRv=(e)=>{ const a=e.target&&e.target.closest&&e.target.closest('a[href^="#"]'); if(!a)return; const id=a.getAttribute('href').slice(1); setTimeout(()=>revealTarget(id),60); };
+    document.addEventListener('click',this._clickRv);
+    if(location.hash)setTimeout(this._hashRv,120);
 
     // ============ COUNT-UPS ============
     const counters=Array.prototype.slice.call(document.querySelectorAll('[data-count]'));

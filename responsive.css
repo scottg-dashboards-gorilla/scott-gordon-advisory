@@ -1,0 +1,115 @@
+/* ============================================================
+   C-LEVEL ADVISING — mobile responsiveness
+   Media-query overrides for the site's inline-styled layouts.
+
+   NOTE: the runtime re-serializes inline styles via the CSSOM,
+   so selectors below match the *normalized* form:
+     - a space follows every ":"   (position: sticky)
+     - bare "0" becomes "0px"      (padding: 0px 32px)
+     - ".9" becomes "0.9"          (1.1fr 0.9fr)
+     - a space follows commas      (repeat(4, 1fr))  -> matched by "repeat(4" prefix
+   ============================================================ */
+
+/* ---------- TABLET & DOWN ---------- */
+@media (max-width: 900px){
+
+  html, body { overflow-x: hidden; }
+
+  /* page horizontal padding */
+  [style*="padding: 0px 32px"],
+  [style*="padding: 0px 28px"],
+  [style*="padding: 0px 40px"],
+  [style*="padding: 54px 32px"],
+  [style*="padding: 104px 28px"]{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  /* hero top padding */
+  [style*="padding: 74px 32px"]{ padding: 44px 20px 0px !important; }
+  [style*="padding: 96px 40px"]{ padding: 56px 20px 0px !important; }
+
+  /* tighten large vertical section padding */
+  [style*="padding: 96px 0px"]{ padding-top:56px !important; padding-bottom:56px !important; }
+  [style*="padding: 88px 0px"]{ padding-top:56px !important; padding-bottom:56px !important; }
+  [style*="padding: 74px 0px"]{ padding-top:50px !important; padding-bottom:50px !important; }
+  [style*="padding: 70px 0px"]{ padding-top:50px !important; padding-bottom:50px !important; }
+
+  /* asymmetric two-column layouts -> single column */
+  [style*="grid-template-columns: 1.35fr"],
+  [style*="grid-template-columns: 1.4fr 1fr"],
+  [style*="grid-template-columns: 1.3fr 1fr"],
+  [style*="grid-template-columns: 1.1fr 0.9fr"],
+  [style*="grid-template-columns: 1.1fr .9fr"],
+  [style*="grid-template-columns: 1fr 1.2fr"],
+  [style*="grid-template-columns: 1fr 1.3fr"],
+  [style*="grid-template-columns: 1fr 1.4fr"],
+  [style*="grid-template-columns: 1.1fr 1fr"]{
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+  /* ...but keep the human-vs-AI comparison table as real columns */
+  [style*="grid-template-columns: 1.1fr 1fr 1fr"]{
+    grid-template-columns: 1.1fr 1fr 1fr !important;
+    gap: 0px !important;
+  }
+
+  /* AI demo console: chips above, output below */
+  [style*="grid-template-columns: 300px 1fr"]{ grid-template-columns: 1fr !important; }
+
+  /* four-up bands -> two-up */
+  [style*="repeat(4"]{ grid-template-columns: repeat(2,1fr) !important; }
+
+  /* right-aligned button rows align left once stacked */
+  [style*="justify-content: flex-end"]{ justify-content: flex-start !important; }
+
+  /* ---- sticky header: brand row + horizontally scrollable nav row ---- */
+  header > div{
+    height: auto !important;
+    flex-wrap: wrap !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    gap: 10px !important;
+    row-gap: 12px !important;
+  }
+  header nav{
+    margin-left: 0px !important;
+    width: 100% !important;
+    order: 5;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    gap: 16px !important;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  header nav::-webkit-scrollbar{ display: none; }
+  header nav > a{
+    white-space: nowrap !important;
+    flex: 0 0 auto !important;
+  }
+}
+
+/* ---------- PHONE ---------- */
+@media (max-width: 640px){
+
+  /* card grids collapse to one column */
+  [style*="repeat(3"]{ grid-template-columns: 1fr !important; }
+  [style*="repeat(2"]{ grid-template-columns: 1fr !important; }
+
+  /* before / after slider needs vertical room on a narrow screen */
+  [data-ba]{ height: 720px !important; }
+  /* keep its inner metric trio as three columns */
+  [data-ba] [style*="repeat(3"]{ grid-template-columns: repeat(3,1fr) !important; }
+
+  /* comparison table: shrink cell padding to fit */
+  [style*="grid-template-columns: 1.1fr 1fr 1fr"] > div{
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+  }
+
+  /* section-title rows (heading + label) stack instead of crowding */
+  [style*="justify-content: space-between"][style*="align-items: baseline"]{
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+}

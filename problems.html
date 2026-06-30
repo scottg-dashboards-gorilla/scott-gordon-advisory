@@ -17,26 +17,25 @@ html{scroll-behavior:smooth}
 body{margin:0;background:#ECE9E0;color:#15140F;font-family:system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 ::selection{background:#E5642A;color:#ECE9E0}
 a{color:inherit}
+@keyframes pivotLoop{0%,8%{transform:rotate(0)}16%,24%{transform:rotate(90deg)}32%,40%{transform:rotate(180deg)}48%,56%{transform:rotate(270deg)}64%,100%{transform:rotate(360deg)}}
 </style>
+<link rel="stylesheet" href="responsive.css">
 </helmet>
 
 <header style="position:sticky;top:0;z-index:90;background:rgba(236,233,224,.92);backdrop-filter:blur(10px);border-bottom:2px solid #15140F">
   <div style="max-width:1280px;margin:0 auto;padding:0 32px;height:66px;display:flex;align-items:center;gap:20px">
     <a href="index.html" data-logo style="display:flex;align-items:center;gap:11px;text-decoration:none;flex:none">
-      <span style="position:relative;width:32px;height:32px;background:#15140F;flex:none;display:block">
-        <span data-bar style="position:absolute;left:6px;bottom:7px;width:5px;height:7px;background:#E5642A"></span>
-        <span data-bar style="position:absolute;left:13.5px;bottom:7px;width:5px;height:12px;background:#E5642A"></span>
-        <span data-bar style="position:absolute;left:21px;bottom:7px;width:5px;height:18px;background:#E5642A"></span>
-      </span>
-      <span style="display:flex;flex-direction:column"><span style="font:800 15px/1 'Archivo',sans-serif;letter-spacing:-.01em;color:#15140F">C&#8209;LEVEL</span><span style="font:600 8px/1 'JetBrains Mono',monospace;letter-spacing:.34em;color:#6b6759;margin-top:4px">ADVISING</span></span>
+      <span style="position:relative;width:32px;height:32px;background:#15140F;flex:none;display:block;overflow:hidden"><span style="position:absolute;inset:0;animation:pivotLoop 6s cubic-bezier(.65,0,.35,1) .4s infinite"><span style="position:absolute;left:0;top:0;width:16px;height:16px;background:#E5642A"></span></span></span>
+      <span style="display:flex;flex-direction:column"><span style="font:800 15px/1 'Archivo',sans-serif;letter-spacing:-.01em;color:#15140F">C&#8209;Level</span><span style="font:700 8.5px/1 'JetBrains Mono',monospace;letter-spacing:.3em;color:#2c2a24;margin-top:4px">ADVISING</span></span>
     </a>
     <nav style="margin-left:auto;display:flex;gap:20px;align-items:center">
+      <a href="index.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Home</a>
       <a href="about.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">About</a>
       <a href="approach.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Approach</a>
       <a href="services.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Services</a>
       <a href="problems.html" style="font:700 12px/1 'JetBrains Mono',monospace;color:#E5642A;text-decoration:none;letter-spacing:.04em;text-transform:uppercase;border-bottom:2px solid #E5642A;padding-bottom:3px">Problems</a>
       <a href="ai.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#E5642A;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">AI</a>
-      <a href="case-studies.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Work</a>
+      <a href="case-studies.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Case Studies</a>
       <a href="insights.html" style="font:600 12px/1 'JetBrains Mono',monospace;color:#15140F;text-decoration:none;letter-spacing:.04em;text-transform:uppercase">Insights</a>
       <a href="contact.html" style="font:700 12px/1 'Archivo',sans-serif;color:#ECE9E0;background:#15140F;padding:12px 18px;text-decoration:none;letter-spacing:.02em;transition:background .15s" style-hover="background:#E5642A">BOOK A CALL</a>
     </nav>
@@ -50,9 +49,9 @@ a{color:inherit}
     <div style="font:600 12px/1 'JetBrains Mono',monospace;color:#6b6759;letter-spacing:.06em"><a href="index.html" style="color:#6b6759;text-decoration:none">HOME</a> / PROBLEMS</div>
   </div>
   <div style="position:relative;max-width:1240px;margin:0 auto;padding:46px 32px 56px">
-    <span class="rv" style="opacity:0;transform:translateY(18px);display:inline-block;font:700 11px/1 'JetBrains Mono',monospace;letter-spacing:.05em;color:#15140F;background:#E5642A;padding:7px 11px;margin-bottom:24px">PROBLEMS I SOLVE</span>
+    <span class="rv" style="opacity:0;transform:translateY(18px);display:inline-block;font:700 11px/1 'JetBrains Mono',monospace;letter-spacing:.05em;color:#15140F;background:#E5642A;padding:7px 11px;margin-bottom:24px">PROBLEMS we SOLVE</span>
     <h1 class="rv" style="opacity:0;transform:translateY(30px);font:800 clamp(38px,6vw,86px)/.94 'Archivo',sans-serif;letter-spacing:-.04em;margin:0 0 24px;max-width:20ch">If any of these sound familiar, we should talk.</h1>
-    <p class="rv" style="opacity:0;transform:translateY(20px);font:400 clamp(16px,1.5vw,21px)/1.55 system-ui;color:#3a382f;max-width:62ch;margin:0">The recurring patterns I'm brought in to fix at growth-stage companies. Most CEOs feel two or three of these at once — and can't tell which is the root cause.</p>
+    <p class="rv" style="opacity:0;transform:translateY(20px);font:400 clamp(16px,1.5vw,21px)/1.55 system-ui;color:#3a382f;max-width:62ch;margin:0">The recurring patterns we're brought in to fix at growth-stage companies. Most CEOs feel two or three of these at once — and can't tell which is the root cause.</p>
   </div>
 </section>
 
@@ -77,7 +76,7 @@ a{color:inherit}
   <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(236,233,224,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(236,233,224,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none"></div>
   <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 32px">
     <div class="rv" style="opacity:0;transform:translateY(22px);display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between">
-      <h2 style="font:800 clamp(28px,4vw,54px)/1 'Archivo';letter-spacing:-.03em;margin:0;max-width:22ch">Not sure which is the root cause? That's what I find.</h2>
+      <h2 style="font:800 clamp(28px,4vw,54px)/1 'Archivo';letter-spacing:-.03em;margin:0;max-width:22ch">Not sure which is the root cause? That's what we find.</h2>
       <a href="contact.html" style="font:700 14px/1 'Archivo';color:#15140F;background:#E5642A;padding:18px 30px;text-decoration:none;transition:transform .12s;white-space:nowrap" style-hover="transform:translateY(-2px)">BOOK A CALL</a>
     </div>
   </div>
@@ -86,9 +85,9 @@ a{color:inherit}
 <footer style="background:#15140F;color:#a7a299;padding:48px 0 30px;border-top:1px solid rgba(236,233,224,.12)">
   <div style="max-width:1240px;margin:0 auto;padding:0 32px">
     <div style="display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-start;border-bottom:1px solid rgba(236,233,224,.16);padding-bottom:28px">
-      <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none"><span style="position:relative;width:28px;height:28px;background:#E5642A;flex:none;display:block"><span style="position:absolute;left:5px;bottom:6px;width:4px;height:6px;background:#15140F"></span><span style="position:absolute;left:12px;bottom:6px;width:4px;height:11px;background:#15140F"></span><span style="position:absolute;left:19px;bottom:6px;width:4px;height:16px;background:#15140F"></span></span><span style="font:800 16px/1 'Archivo';color:#ECE9E0;letter-spacing:-.01em">C&#8209;LEVEL ADVISING</span></a>
+      <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none"><span style="position:relative;width:28px;height:28px;background:#E5642A;flex:none;display:block;overflow:hidden"><span style="position:absolute;left:0;top:0;width:14px;height:14px;background:#15140F"></span></span><span style="font:800 16px/1 'Archivo';color:#ECE9E0;letter-spacing:-.01em">C&#8209;Level ADVISING</span></a>
       <div style="display:flex;gap:44px;flex-wrap:wrap">
-        <div style="display:flex;flex-direction:column;gap:9px"><span style="font:600 10px/1 'JetBrains Mono';color:#5a564c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px">Explore</span><a href="about.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">About</a><a href="services.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Services</a><a href="approach.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Approach</a><a href="case-studies.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Work</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><span style="font:600 10px/1 'JetBrains Mono';color:#5a564c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px">Explore</span><a href="about.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">About</a><a href="services.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Services</a><a href="approach.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Approach</a><a href="case-studies.html" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">Case Studies</a></div>
         <div style="display:flex;flex-direction:column;gap:9px"><span style="font:600 10px/1 'JetBrains Mono';color:#5a564c;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px">Contact</span><a href="mailto:scottgordon2002@gmail.com" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">scottgordon2002@gmail.com</a><a href="https://www.linkedin.com/in/scott-gordon-7668b12/" target="_blank" rel="noopener" style="font:500 13px/1 system-ui;color:#a7a299;text-decoration:none">LinkedIn</a></div>
       </div>
     </div>
